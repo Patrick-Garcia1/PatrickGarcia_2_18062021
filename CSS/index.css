@@ -32,6 +32,9 @@
     .bleu{
         color: #0065FC;
     }
+    .bleu-c{
+        color: #DEEBFF;
+    }
     .bg-gris{
         background-color: #F2F2F2;
     }
@@ -39,6 +42,14 @@
         background-color: #DEEBFF;
     }
 
+    /* background image */
+
+    .bg-position-centre{
+        background-position: center;
+    }
+    .bg-size-cover{
+        background-size: cover;
+    }
 
     /* texte */
 
@@ -291,4 +302,88 @@
     .info a:hover i{
         color: #DEEBFF;
         background-color: #0065FC;
+    }
+
+    /* Hebergement */
+
+    /* carte informative hebergement */
+
+    .ensemble-carte-informative-article a{
+        box-shadow: 1px 3px 8px 1px #e2e2e2;
+        border-radius: 18px; 
+    }
+
+    /* hebergement */
+
+    article h2{
+        font-size: 1.4em; 
+        padding-top: 12px;
+        margin-left: 5%;
+    }
+    .ensemble-carte-informative-article{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .ensemble-carte-informative-article a{
+        margin: 5px 0;
+        width: 90%;
+    }
+    .carte-informative-article{
+        border-radius: 18px; 
+        height: 195px;
+    }
+    .carte-informative-article p{
+        margin: 2px 20px 2px 5%;
+    }
+    .prix{
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+    .plus{
+        margin: 0 0 25px 3%;
+        padding: 28px 0 0 10px;
+        font-size: 1.1em;
+    }
+
+    /* éléments texte des cartes article et populaire */
+
+    .carte-informative-article p i{
+        font-size: 0.7em;  
+    }
+    span{
+        margin: 0 2px;
+    }
+
+    /* spécificité carte hebergement */
+
+    .cannebiere{
+        background-image: url(../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+        background-position-y: -50px;
+    }
+    .port{
+        background-image: url(../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    }
+    .mouettes{
+        background-image: url(../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    }
+    .mer{
+        background-image: url(../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    }
+    .Panier{
+        background-image: url(../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    }
+    .Amina{
+        background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    }
+    .cannebiere, .port, .mouettes, .mer, .Panier, .Amina{
+        margin: 5px 5px;
+        height: 115px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    /* interaction cartes article et populaire */
+
+    .ensemble-carte-informative-article a:hover{
+        box-shadow: 2px 3px 6px 2px black;
     }
