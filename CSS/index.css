@@ -593,3 +593,39 @@
             background-position-y: -160px;
         }
     }
+
+    /* media 820px à 1349px */
+
+    @media screen and (min-width: 820px) and (max-width: 1349px){
+
+        /* moteur de recherche */
+
+        form{
+            width: 500px;
+        }
+
+        /* article */
+
+        .ensemble-carte-informative-article a{
+            width: 300px;
+            margin: 15px 20px;
+        }
+
+        /* populaire */
+
+        .ensemble-carte-informative-populaire a{
+            width: 80%;
+        }
+
+        /* activité */
+
+        .carte-activité{
+            height: 600px;
+        }
+        .carte-activité a{
+            width: 40%;
+        }
+        .longchamp{
+            background-position-y: -70px;
+        }
+    }
