@@ -32,6 +32,9 @@
     .bleu{
         color: #0065FC;
     }
+    .bg-gris{
+        background-color: #F2F2F2;
+    }
 
     /* texte */
 
@@ -111,3 +114,85 @@
     .un:hover a, .deux:hover a{
         color: #0065FC;
     } 
+
+    /* tête de page */
+
+    header{
+        margin: 0 5%;
+    }
+
+    /* slogan */
+
+    .slogan{
+        margin-top: 35px;
+    }
+    .slogan h1{
+        font-size: 1.4em;
+    }
+    .slogan p{
+        font-size: 1em;
+    }
+    
+    /* moteur de recherche header */
+
+    form{
+        width: 100%;
+        margin: 25px auto;
+        height: 50px;
+        align-items: center;
+        border: 1px solid #F2F2F2;
+        border-radius: 15px;
+    }
+
+    /*zone de l'icone*/
+
+    .localisation{
+        padding: 17px 19px 17px 19px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        font-size: 1.1em;
+    }
+
+    /*zone du texte*/
+
+    input[type='search']{
+        height: 30px;
+        width: 100%;
+        margin: 10px 10px;  
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    input[placeholder], input[required]{
+        color: black;
+    }
+    .texte{
+        display: none;
+    }
+
+    /*zone du bouton*/
+
+    button{
+        background-color: #0065FC;
+        color: white;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        font-size: 1.2em;
+        padding: 0 15px;
+        cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
+    }
+    .bouton{
+        display: inline;
+    }
+
+    /* interaction moteur de recherche */
+
+    form button[type='submit']:hover{
+        background-color: #DEEBFF;
+        color: #0065FC;
+        border-color: #F2F2F2;
+        border-left: none;
+        cursor: pointer;
+    }

@@ -44,18 +44,21 @@
             <header>
                 
                 <!--slogan-->
-                <div>
-                    <H1>Trouvez votre hébergement pour des vacances de rêve</H1>
+                <div class="slogan">
+                    <H1 class='bolder'>Trouvez votre hébergement pour des vacances de rêve</H1>
                      <p>En plein centre ville ou en pleine nature</p>
                  </div>
                  
                  <!--moteur de recherche-->
 
-                 <form> 
-                     <label></label>
-                     <input>
-                     <button></button>
-                 </form>
+                 <!--pour le bouton ma recherche de construction html https://openclassrooms.com/forum/sujet/css-html-2 -->
+
+                 <form method="post" action="traitement.php" class='flex'>
+                    <i class="localisation fas fa-map-marker-alt bg-gris"></i>   
+                    <label for='ville'></label>
+                    <input type='search' placeholder='Marseille, France' required id='ville' name='ville'>
+                    <button type="submit" disabled><span class='bouton'><i class="fas fa-search"></i></span><span class='texte'>Rechercher</span></button>
+                </form>
 
                 <!--filtres-->  
 
