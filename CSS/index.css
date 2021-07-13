@@ -573,3 +573,23 @@
     .pied-de-page div a:hover{
         color: #0065FC;
     }
+
+    /* media 600px à 819px */
+
+    @media screen and (min-width: 600px) and (max-width: 819px){
+        .port{
+            background-position-y: 200px;
+        }
+        .mouettes{
+            background-position-y: 200px;
+        }
+        .mer{
+            background-position-y: 300px;
+        }
+        .Amina{
+            background-position-y: 450px;
+        }
+        .longchamp{
+            background-position-y: -160px;
+        }
+    }
