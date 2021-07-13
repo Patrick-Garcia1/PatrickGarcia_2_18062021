@@ -41,7 +41,7 @@
             </div>
 
             <!--tête de page-->
-            <header>
+            <header class='relative'>
                 
                 <!--slogan-->
                 <div class="slogan">
@@ -54,11 +54,11 @@
                  <!--pour le bouton ma recherche de construction html https://openclassrooms.com/forum/sujet/css-html-2 -->
 
                  <form method="post" action="traitement.php" class='flex'>
-                    <i class="localisation fas fa-map-marker-alt bg-gris"></i>   
-                    <label for='ville'></label>
-                    <input type='search' placeholder='Marseille, France' required id='ville' name='ville'>
-                    <button type="submit" disabled><span class='bouton'><i class="fas fa-search"></i></span><span class='texte'>Rechercher</span></button>
-                </form>
+                     <i class="localisation fas fa-map-marker-alt bg-gris"></i>   
+                     <label for='ville'></label>
+                     <input type='search' placeholder='Marseille, France' required id='ville' name='ville'>
+                     <button type="submit" disabled><span class='bouton'><i class="fas fa-search"></i></span><span class='texte'>Rechercher</span></button>
+                 </form>
 
                 <!--filtres-->  
 
@@ -92,18 +92,96 @@
                             <p>Animaux autorisés</p>
                         </div>
                     </li>                 
-                </ul>  
+                </ul>   
 
                 <!--logo + information-->
-                <div>
-                    <a></a>
+                <div class='info flex'>
+                    <a href='#'><i class="fas fa-info bleu centrer"></i></a>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </header>
 
+            <!--section hero-->
+            <main>
 
+                <!--hébergement + les plus populaires-->
+                <section>
+                    
+                    <!--zone hébergement-->
+                    <article>
+                        <h2>Hébergement à Marseille</h2> 
+                        <div>                       
+                            <!--Carte Informative -->
+                            <a>
+                                <div>
+                                    <div></div>                                   
+                                    <p>Auberge la Cannebière</p>
+                                    <p>Nuit à partir de<span>25</span>€</p>
+                                    <p></p>
+                                </div>
+                            </a>
+                            <a>
+                                <div>                                  
+                                    <div></div>                                                               
+                                    <p>Hôtel du port</p>
+                                    <p>Nuit à partir de<span>52</span>€</p>
+                                    <p></p>
+                                </div>
+                            </a>
+                            <a>
+                                <div>                                
+                                    <div></div>                                                                
+                                    <p>Hôtel Les mouettes</p>
+                                    <p>Nuit à partir de<span>76</span>€</p>
+                                    <p></p>
+                                </div>
+                            </a>
+                            <a>
+                                <div>                                   
+                                    <div></div>                                                                
+                                    <p>Hôtel de la mer</p>
+                                    <p>Nuit à partir de<span>46</span>€</p>
+                                    <p></p>
+                                </div>
+                            </a>
+                            <a>
+                                <div>                                   
+                                    <div></div>                              
+                                    <p>Auberge Le Panier</p>
+                                    <p>Nuit à partir de<span>23</span>€</p>
+                                    <p></p>
+                                </div>
+                            </a>
+                            <a>
+                                <div>                                 
+                                    <div></div>                                                          
+                                    <p>Hôtel chez Amina</p>
+                                    <p>Nuit à partir de<span>96</span>€</p>
+                                    <p></p>
+                                </div>
+                            </a>                      
+                        </div> 
 
+                        <!--point de liste plus de choix-->
+                        <p><a>Afficher plus</a></p>
 
+                    </article>
+
+                    <!--les plus populaires-->
+                    <aside>
+                        
+                    </aside>
+                </section>
+
+                <!--activités à Marseille-->
+                <section>              
+                
+                
+                
+                
+                </section>
+
+            </main>
 
 
         </div>
