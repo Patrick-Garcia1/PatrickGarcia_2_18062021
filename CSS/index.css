@@ -66,6 +66,12 @@
         font-weight: bolder;
     }
 
+    /* byebye alerte w3c*/
+
+    h5{
+        display: none;
+    }
+    
     /* logo menu */
 
     .logo-menu{
