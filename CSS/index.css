@@ -463,3 +463,67 @@
     .plus a:hover{
         color: #0065FC;
     }
+
+    /* Activités à Marseille */
+
+    .activité{
+        margin: 0 0 60px 0;
+    }
+    .activité h3{
+        margin: 22px 0 22px 5%;
+        font-size: 1.3em;
+    }
+    .carte-activité{
+        flex-flow: column wrap;
+        justify-content: space-between;
+        height: 1255px;
+        align-content: space-around;
+    }
+    .carte-activité a{
+        border-radius: 20px;
+        box-shadow: 1px 3px 8px 1px #e2e2e2;
+        width: 90%;
+    }
+    .carte-informative3, .carte-informative4, .carte-informative5, .carte-informative6, .carte-informative7{
+        height: 190px;
+        border-radius: 20px; 
+    }
+    .carte-informative3 p, .carte-informative4 p, .carte-informative5 p, .carte-informative6 p, .carte-informative7 p{
+        margin-left: 3%;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    /*carte spécifique activité*/
+
+    .VieuxPort{ 
+        background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    }
+    .PNC{
+        background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    }
+    .Pomegues{
+        background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    }
+    .frioul{     
+        background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    }
+    .NDDLG{
+        background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+        background-position-y: -30px;
+    }
+    .longchamp{
+        background-image: url(../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+        background-position-y: -80px;
+    }
+    .VieuxPort, .PNC, .Pomegues, .frioul, .NDDLG, .longchamp{
+        height: 133px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    /* interaction activité */
+
+    .carte-activité a:hover{
+        box-shadow: 2px 3px 6px 2px black;
+    }
