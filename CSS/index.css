@@ -629,3 +629,267 @@
             background-position-y: -70px;
         }
     }
+
+    /* media au dessus de 1350px */
+
+    @media screen and (min-width: 1350px){
+
+        /* menu logo */
+
+        /* logo */
+
+        .logo-menu{
+            height: 95px;
+        }
+        .logo-menu p{
+            left: 50px;
+            top: 30px;
+        }
+
+        /* menu */
+
+        nav{
+            min-width: 460px;  
+            width: 460px;
+            position: absolute;
+            right: 1%;
+        }
+        nav ul{
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            padding: 0;
+        }
+        nav ul li{
+            list-style: none;
+            min-width: 30%; 
+        } 
+        .un, .deux, .trois{
+            order: unset;
+            padding: 50px 0 0 0;
+            border-bottom: none;
+            border-top: 2px solid transparent;
+            text-align: center;
+        }
+
+        /* interaction menu logo */
+
+        .un:hover, .deux:hover{
+            border-bottom: none;
+            border-top: 2px solid #0065FC;
+        }
+
+        /* header */
+
+        header{
+            margin: 0 3%;
+        }
+
+        /* slogan */
+
+        .slogan{
+            line-height: 1.1em;
+        }
+
+        /* moteur de recherche */
+
+        form{
+            width: 420px;
+            margin: 0;
+        }
+
+        /* bouton moteur de recherche */
+
+        button[type='submit']{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        button .bouton i{
+            display: none;
+        }
+        button .texte{
+            display: inline;
+        }
+
+        /* filtres */
+
+        .ensemble-filtre{
+            margin: 30px 0;
+        }
+        .segment-filtre{
+            width: unset;
+            margin: 0 30px 0 10px;
+        }
+        .filtre{
+            margin-right: 20px;
+        }
+        .li-transformation p{
+            padding-right: 25px;
+            text-indent: 15px;
+        }
+
+        /* section hero */
+
+        main{
+            margin-top: 40px;
+        }
+        .premiere-section{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        /* article */
+
+        article{
+            background-color: #F2F2F2;
+            border-radius: 20px;
+            max-width: 62%;
+            margin: 0 0 0 3%;
+            padding: 0 10px;
+            min-height: 100%;
+        }
+        article h2{
+            padding-top: 20px; 
+            margin: 18px 0 10px 5%; 
+        }
+        .ensemble-carte-informative-article{
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: space-around;
+        }
+        .ensemble-carte-informative-article a{
+            background-color: white;
+            width: 245px;
+            margin: 18px 0;
+        }
+        .carte-informative-article{
+            width: 245px;
+        }
+        .cannebiere, .port, .mouettes, .mer, .Panier, .Amina{
+            margin: 5px auto;
+            width: 234px;
+            height: 115px;
+        }
+        .plus {
+            margin-left: 2%;     
+            padding: 18px 0 20px 10px;
+        }
+
+        /* populaire */
+
+        .populaire{
+            max-width: 29%;
+            border-radius: 20px;
+            margin: 0 3.5% 0 0; 
+            padding: 0 10px;
+            min-height: 100%;
+        }
+        .populaire h2{
+            padding-top: 20px;  
+            margin: 18px 0 10px 5%; 
+        }
+        .populaire h2 i{
+            right: 25px;
+        }
+        .ensemble-carte-informative-populaire{
+            height: 85%;
+            align-content: space-around;
+        }
+        .ensemble-carte-informative-populaire a{
+            width: 343px;
+            height: 145px;
+            margin: 2% 0;
+        }
+        .carte-informative-populaire{
+            width: 343px;
+        }
+        
+        /* activité */
+
+        .activité{
+            margin: 0 3.5% 0 3.5%;
+        }
+        .activité h3{
+            margin: 60px 3.5% 22px 3.5%;
+        }
+        .carte-activité{
+            height: 445px;
+            align-content: space-between;
+        }
+        .carte-activité a{
+            width: unset;
+        }
+        .carte-informative3 p, .carte-informative4 p, .carte-informative5 p, .carte-informative6 p, .carte-informative7 p{
+            text-indent: 18px;
+            font-size: 0.98em;
+            margin-top: 20px;
+        }
+        
+        /* carte informative activité */
+        
+        .carte-informative3{
+            Height: 444px;
+            border-radius: 20px; 
+        }
+        .carte-informative4{
+            height: 235px;
+            border-radius: 20px; 
+        }
+        .carte-informative5{
+            height: 165px;
+            border-radius: 20px; 
+        }
+        .carte-informative6{
+            height: 195px;
+            border-radius: 20px; 
+        }
+        .carte-informative7{
+            height: 210px;
+            border-radius: 20px; 
+        }
+        
+        /*carte spécifique activité*/
+        
+        .VieuxPort{
+            Height: 390px;
+            width: 302px;
+        }
+        .PNC{
+            Height: 390px;
+            width: 302px;
+        }
+        .Pomegues{
+            Height: 180px;
+            width: 302px;
+        }
+        .frioul{
+            Height: 110px;
+            width: 302px;
+        }
+        .NDDLG{
+            Height: 140px;
+            width: 302px;
+            background-position: top;
+        }
+        .longchamp{
+            Height: 154px;
+            width: 302px;
+            background-position-y: 0px;
+        }
+
+        /* pied de page */
+
+        footer{
+            margin-top: 60px;
+            padding-bottom: 35px;
+        }
+        .pied-de-page{
+            justify-content: flex-start;
+        }
+        .pied-de-page div{
+            margin: 0px 2.9%;
+            width: 26%;
+        }
+        .pied-de-page div h4{
+            padding: 17px 0 10px 0;
+        }
+    }
