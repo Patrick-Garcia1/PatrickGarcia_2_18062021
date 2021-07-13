@@ -62,31 +62,37 @@
 
                 <!--filtres-->  
 
-                <ul>                                       
-                    <li>
-                        <p><a>Filtres</a></p>
+                <!-- pour le filtre, ma recherche de construction html https://www.devdesign.fr/mettre-en-place-un-systeme-de-filtre-simple/-->
+
+                <ul class='ensemble-filtre flex bolder'>                                       
+                    <li class='segment-filtre'>
+                        <p><a href='#'>Filtres</a></p>
                     </li>
-                    <li>   
-                        <div>                                                          
+                    <li class='filtre' data-filter="economique">   
+                        <div class='li-transformation flex'>
+                            <i class="fas fa-money-bill-wave relative bleu bg-bleu-c"></i>                                                            
                             <p>Économique</p>                        
                         </div>                          
                     </li>
-                    <li>
-                        <div>                              
+                    <li class='filtre' data-filter="familial">
+                        <div class='li-transformation flex'>
+                            <i class="fas fa-child relative bleu bg-bleu-c"></i>                               
                             <p>Familial</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
+                    <li class='filtre' data-filter="romantique">
+                        <div class='li-transformation flex'>
+                            <i class="fas fa-heart relative bleu bg-bleu-c"></i>
                             <p>Romantique</p>
                         </div>
                     </li>
-                    <li>
-                        <div>                            
+                    <li class='filtre' data-filter="animaux_admit">
+                        <div class='li-transformation flex'>
+                            <i class="fas fa-dog relative bleu bg-bleu-c"></i>                              
                             <p>Animaux autorisés</p>
                         </div>
                     </li>                 
-                </ul>   
+                </ul>  
 
                 <!--logo + information-->
                 <div>

@@ -35,6 +35,10 @@
     .bg-gris{
         background-color: #F2F2F2;
     }
+    .bg-bleu-c{
+        background-color: #DEEBFF;
+    }
+
 
     /* texte */
 
@@ -132,7 +136,7 @@
     .slogan p{
         font-size: 1em;
     }
-    
+
     /* moteur de recherche header */
 
     form{
@@ -195,4 +199,72 @@
         border-color: #F2F2F2;
         border-left: none;
         cursor: pointer;
+    }
+    
+     /* filtre header */
+
+     .ensemble-filtre{
+        font-size: 1em;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .segment-filtre{
+        width: 100%;
+        list-style-type: none;
+    }
+    .filtre{
+        list-style-type: none;
+        margin: 0 8px 10px 5px;
+    }
+    .li-transformation{
+        border: 2px solid rgb(199, 198, 198);
+        border-radius: 30px;
+        border-left: none;
+        align-items: center;
+        max-height: 51px; 
+        cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
+    }
+    .li-transformation i{
+        font-size: 1.1em;
+    }
+    .li-transformation p{
+        text-indent: 5px;
+        padding-right: 15px;
+        border-radius: 30px;
+    }
+
+    /*icones de filtres */
+
+    .fa-money-bill-wave{
+        padding: 17px 15px 17px 15px;
+    }
+    .fa-child{
+        padding: 17px 19px 17px 19px;
+    }
+    .fa-heart{
+        padding: 17px 17px 17px 17px;
+    }
+    .fa-dog{
+        padding: 17px 16px 17px 16px;
+    }
+    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+        border-radius: 30px; 
+        right: 2px;
+    }
+
+    /* interaction filtre */
+
+    .segment-filtre p a:hover{
+        color: #0065FC; 
+    }
+    .li-transformation:hover{
+        color: #0065FC;
+        background-color: #DEEBFF; 
+        border-color: transparent;
+        box-shadow: 1px 1px 4px 1px black;
+        cursor: pointer;
+    }
+    .li-transformation:hover i{
+        background-color: #0065FC;
+        color: #DEEBFF;
     }
