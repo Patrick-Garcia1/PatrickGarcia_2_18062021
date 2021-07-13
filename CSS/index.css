@@ -1,8 +1,12 @@
     /* Mobile first */     
-     
+    /* de 320px à 819px */
+
+    /* grands ensembles et classes racourcies*/
+    
     *{
         box-sizing: border-box;
     }
+
     body{
         font-family: 'Raleway', sans-serif;
         margin: 0 auto;
@@ -71,7 +75,7 @@
     h5{
         display: none;
     }
-    
+
     /* logo menu */
 
     .logo-menu{
@@ -218,9 +222,9 @@
         cursor: pointer;
     }
 
-     /* filtre header */
+    /* filtre header */
 
-     .ensemble-filtre{
+    .ensemble-filtre{
         font-size: 1em;
         flex-wrap: wrap;
         padding: 0;
@@ -310,9 +314,20 @@
         background-color: #0065FC;
     }
 
+    /* section hero */
+
+    /* main, premiere section, hebergement et populaire */
+
+    main{
+        margin: 15px 0 10px 0;
+    }
+    .premiere-section{
+        flex-direction: column-reverse; 
+    }
+   
     /* Hebergement */
 
-    /* carte informative hebergement populaire*/
+    /* carte informative hebergement */
 
     .ensemble-carte-informative-article a, .ensemble-carte-informative-populaire a{
         box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -387,7 +402,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
-
+    
     /*les plus populaires*/
 
     .populaire{
@@ -463,7 +478,7 @@
     .ensemble-carte-informative-article a:hover, .ensemble-carte-informative-populaire a:hover{
         box-shadow: 2px 3px 6px 2px black;
     }
-
+    
     /* interaction du main */
 
     .plus a:hover{
