@@ -527,3 +527,28 @@
     .carte-activité a:hover{
         box-shadow: 2px 3px 6px 2px black;
     }
+
+    /* pied de page */
+
+    footer{
+        padding-bottom: 40px; 
+    }
+    .pied-de-page{   
+        line-height: 0.75em;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 1.3%;
+    }
+    .pied-de-page div{
+        margin: 0 5.9%;
+    }
+    .pied-de-page div H4{
+        padding: 45px 0 10px 0;
+        font-size: 1.1em;
+    }
+    
+    /* interaction pied de page */
+
+    .pied-de-page div a:hover{
+        color: #0065FC;
+    }
