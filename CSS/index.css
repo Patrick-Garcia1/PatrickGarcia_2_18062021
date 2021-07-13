@@ -1,3 +1,113 @@
-     *{
+    /* Mobile first */     
+     
+    *{
         box-sizing: border-box;
     }
+    body{
+        font-family: 'Raleway', sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        color: black;
+        font-weight: 500;
+    }
+    ::selection{
+        color: #0065FC;
+        background-color: #F2F2F2;
+    }
+    :link{
+        color: black;
+    }
+    .flex{
+        display: flex;
+    }
+    .relative{
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+
+    /* couleur recommandées */
+
+    .bleu{
+        color: #0065FC;
+    }
+
+    /* texte */
+
+    a{
+        text-decoration: none; 
+    }
+    :visited{
+        color: black;
+    }
+    .centrer{
+        text-align: center;
+    }
+    .bolder{
+        font-weight: bolder;
+    }
+
+    /* logo menu */
+
+    .logo-menu{
+        height: 130px;
+        width: 100%;
+    }
+
+    /*logo*/
+
+    .logo-menu p{
+        left: 15px;
+        top: 3px;
+    }
+    .logo-menu p img{
+        width: 100px;
+    }
+
+    /* menu */
+
+    nav{
+        min-width: 100%;
+    }
+    nav ul{
+        flex-flow: row-reverse wrap-reverse;
+        padding-left: 0;
+        margin: 0;
+        padding-top: 37px;
+    }
+    nav ul li{
+        min-width: 50%;
+        list-style: none;
+        
+    }
+    .un{
+        order: 2;
+    }
+    .un, .deux{
+        padding: 37px 0 15px 0;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .trois{
+        align-self: flex-start;
+        order: 3;
+        text-align: end;
+        margin-right: 20px;
+        color: #0065FC;
+    }
+    
+    /* interaction menu */
+
+    .trois a:link{
+        color: #0065FC;
+    }
+    .trois a:visited{
+        color: #0065FC;
+    }
+    .un:hover, .deux:hover{
+        border-bottom: 2px solid #0065FC;
+        cursor: pointer;
+    }
+    .un:hover a, .deux:hover a{
+        color: #0065FC;
+    } 
