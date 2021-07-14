@@ -107,7 +107,6 @@
     nav ul li{
         min-width: 50%;
         list-style: none;
-        
     }
     .un{
         order: 2;
@@ -198,7 +197,7 @@
 
     /*zone du bouton*/
 
-    button{
+    form[action="traitement.php"] button{
         background-color: #0065FC;
         color: white;
         height: 50px;
@@ -214,7 +213,7 @@
 
     /* interaction moteur de recherche */
 
-    form button[type='submit']:hover{
+    form[action="traitement.php"] button:hover{
         background-color: #DEEBFF;
         color: #0065FC;
         border-color: #F2F2F2;
@@ -224,10 +223,24 @@
 
     /* filtre header */
 
+    form[action='filtre.php']{
+        border: none;
+    }
+    form[action='filtre.php'] input[type='button']{
+        font-family: 'Raleway', sans-serif;
+        background-color: transparent;
+        color: black;
+        border-radius: 15px;
+        padding-right: 15px;
+        font-size: 1em;
+        font-weight: bold;
+        border: none;
+    }
     .ensemble-filtre{
         font-size: 1em;
         flex-wrap: wrap;
         padding: 0;
+        height: 100%;
     }
     .segment-filtre{
         width: 100%;
@@ -237,7 +250,7 @@
         list-style-type: none;
         margin: 0 8px 10px 5px;
     }
-    .li-transformation{
+    .filtre-transformation{
         border: 2px solid rgb(199, 198, 198);
         border-radius: 30px;
         border-left: none;
@@ -245,14 +258,16 @@
         max-height: 51px; 
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
     }
-    .li-transformation i{
+    .filtre-transformation i{
         font-size: 1.1em;
     }
-    .li-transformation p{
+    /* plus d'actualité
+    .filtre-transformation p{
         text-indent: 5px;
         padding-right: 15px;
         border-radius: 30px;
     }
+    */
 
     /*icones de filtres */
 
@@ -278,14 +293,14 @@
     .segment-filtre p a:hover{
         color: #0065FC; 
     }
-    .li-transformation:hover{
+    .filtre-transformation:hover{
         color: #0065FC;
         background-color: #DEEBFF; 
         border-color: transparent;
         box-shadow: 1px 1px 4px 1px black;
         cursor: pointer;
     }
-    .li-transformation:hover i{
+    .filtre-transformation:hover i{
         background-color: #0065FC;
         color: #DEEBFF;
     }
@@ -600,7 +615,7 @@
 
         /* moteur de recherche */
 
-        form{
+        form[action="traitement.php"]{
             width: 500px;
         }
 
@@ -692,7 +707,7 @@
 
         /* moteur de recherche */
 
-        form{
+        form[action="traitement.php"]{
             width: 420px;
             margin: 0;
         }
@@ -703,10 +718,10 @@
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
         }
-        button .bouton i{
+        button[type='submit'] .bouton i{
             display: none;
         }
-        button .texte{
+        button[type='submit'] .texte{
             display: inline;
         }
 
@@ -722,10 +737,11 @@
         .filtre{
             margin-right: 20px;
         }
-        .li-transformation p{
+        /* plus d'actualité
+        .filtre-transformation p{
             padding-right: 25px;
             text-indent: 15px;
-        }
+        } */
 
         /* section hero */
 
