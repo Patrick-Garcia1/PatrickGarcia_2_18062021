@@ -251,7 +251,6 @@
         border-left: none;
         align-items: center;
         max-height: 51px; 
-        list-style-type: none;
         margin: 0 8px 10px 5px;
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
     }
