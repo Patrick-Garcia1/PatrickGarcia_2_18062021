@@ -21,13 +21,13 @@
     :link{
         color: black;
     }
-    .flex{
+    .flexible{
         display: flex;
     }
     .relative{
         position: relative;
     }
-    .absolute{
+    .absolue{
         position: absolute;
     }
 
@@ -39,19 +39,19 @@
     .bleu-c{
         color: #DEEBFF;
     }
-    .bg-gris{
+    .fe-gris{
         background-color: #F2F2F2;
     }
-    .bg-bleu-c{
+    .fe-bleu-c{
         background-color: #DEEBFF;
     }
 
     /* background image */
 
-    .bg-position-centre{
+    .fe-position-centre{
         background-position: center;
     }
-    .bg-size-cover{
+    .fe-taille-couvert{
         background-size: cover;
     }
 
@@ -66,7 +66,7 @@
     .centrer{
         text-align: center;
     }
-    .bolder{
+    .gras{
         font-weight: bolder;
     }
 
@@ -390,13 +390,13 @@
     .mer{
         background-image: url(../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
     }
-    .Panier{
+    .panier{
         background-image: url(../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
     }
-    .Amina{
+    .amina{
         background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     }
-    .cannebiere, .port, .mouettes, .mer, .Panier, .Amina{
+    .cannebiere, .port, .mouettes, .mer, .panier, .amina{
         margin: 5px 5px;
         height: 115px;
         border-top-left-radius: 15px;
@@ -455,10 +455,10 @@
     .coeur{
         background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
     }
-    .Blanc{
+    .blanc{
         background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     }
-    .soleil, .coeur, .Blanc{
+    .soleil, .coeur, .blanc{
         min-width: 36%;
         height: 134px;
         margin-left: 5px;
@@ -517,19 +517,19 @@
 
     /*carte spécifique activité*/
 
-    .VieuxPort{ 
+    .vieuxport{ 
         background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
-    .PNC{
+    .pnc{
         background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     }
-    .Pomegues{
+    .pomegues{
         background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
     .frioul{     
         background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     }
-    .NDDLG{
+    .nddlg{
         background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
         background-position-y: -30px;
     }
@@ -537,7 +537,7 @@
         background-image: url(../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
         background-position-y: -80px;
     }
-    .VieuxPort, .PNC, .Pomegues, .frioul, .NDDLG, .longchamp{
+    .vieuxport, .pnc, .pomegues, .frioul, .nddlg, .longchamp{
         height: 133px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -586,7 +586,7 @@
         .mer{
             background-position-y: 300px;
         }
-        .Amina{
+        .amina{
             background-position-y: 450px;
         }
         .longchamp{
@@ -764,7 +764,7 @@
         .carte-informative-article{
             width: 245px;
         }
-        .cannebiere, .port, .mouettes, .mer, .Panier, .Amina{
+        .cannebiere, .port, .mouettes, .mer, .panier, .amina{
             margin: 5px auto;
             width: 234px;
             height: 115px;
@@ -849,15 +849,15 @@
         
         /*carte spécifique activité*/
         
-        .VieuxPort{
+        .vieuxport{
             Height: 390px;
             width: 302px;
         }
-        .PNC{
+        .pnc{
             Height: 390px;
             width: 302px;
         }
-        .Pomegues{
+        .pomegues{
             Height: 180px;
             width: 302px;
         }
@@ -865,7 +865,7 @@
             Height: 110px;
             width: 302px;
         }
-        .NDDLG{
+        .nddlg{
             Height: 140px;
             width: 302px;
             background-position: top;

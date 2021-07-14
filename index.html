@@ -17,24 +17,24 @@
     </head>
 
     <body>
-        <div id='main_wrapper'>
+        <div id='main-wrapper'>
             
             <!--icone + menu-->
-            <div class="logo-menu flex relative">
+            <div class="logo-menu flexible relative">
                 <!--icone-->
-                <p class='absolute'>
+                <p class='absolue'>
                     <img src="images/logo/Reservia@3x.png" alt="logo">
                 </p>
                 <!--menu-->
                 <nav>   
-                    <ul class='flex'>  
+                    <ul class='flexible'>  
                         <li class="un centrer">
                             <a href="#ancre1">Hébergements</a>
                         </li>
                         <li class="deux centrer">
                             <a href="#ancre2">Activités</a>
                         </li>
-                        <li class="trois centrer bolder bleu">
+                        <li class="trois centrer gras bleu">
                             <a href='#' title="Inscivez-vous!">S'inscrire</a>
                         </li>
                     </ul>
@@ -46,7 +46,7 @@
                 
                 <!--slogan-->
                 <div class="slogan">
-                    <H1 class='bolder'>Trouvez votre hébergement pour des vacances de rêve</H1>
+                    <H1 class='gras'>Trouvez votre hébergement pour des vacances de rêve</H1>
                      <p>En plein centre ville ou en pleine nature</p>
                  </div>
                  
@@ -54,8 +54,8 @@
 
                  <!--pour le bouton ma recherche de construction html https://openclassrooms.com/forum/sujet/css-html-2 -->
 
-                 <form method="post" action="traitement.php" class='flex'>
-                     <i class="localisation fas fa-map-marker-alt bg-gris"></i>   
+                 <form method="post" action="traitement.php" class='flexible'>
+                     <i class="localisation fas fa-map-marker-alt fe-gris"></i>   
                      <label for='ville'></label>
                      <input type='search' placeholder='Marseille, France' required id='ville' name='ville'>
                      <button type="submit" disabled><span class='bouton'><i class="fas fa-search"></i></span><span class='texte'>Rechercher</span></button>
@@ -65,38 +65,38 @@
 
                 <!-- pour le filtre, ma recherche de construction html https://www.devdesign.fr/mettre-en-place-un-systeme-de-filtre-simple/-->
 
-                <ul class='ensemble-filtre flex bolder'>                                       
+                <ul class='ensemble-filtre flexible gras'>                                       
                     <li class='segment-filtre'>
                         <p><a href='#'>Filtres</a></p>
                     </li>
                     <li class='filtre' data-filter="economique">   
-                        <div class='li-transformation flex'>
-                            <i class="fas fa-money-bill-wave relative bleu bg-bleu-c"></i>                                                            
+                        <div class='li-transformation flexible'>
+                            <i class="fas fa-money-bill-wave relative bleu fe-bleu-c"></i>                                                            
                             <p>Économique</p>                        
                         </div>                          
                     </li>
                     <li class='filtre' data-filter="familial">
-                        <div class='li-transformation flex'>
-                            <i class="fas fa-child relative bleu bg-bleu-c"></i>                               
+                        <div class='li-transformation flexible'>
+                            <i class="fas fa-child relative bleu fe-bleu-c"></i>                               
                             <p>Familial</p>
                         </div>
                     </li>
                     <li class='filtre' data-filter="romantique">
-                        <div class='li-transformation flex'>
-                            <i class="fas fa-heart relative bleu bg-bleu-c"></i>
+                        <div class='li-transformation flexible'>
+                            <i class="fas fa-heart relative bleu fe-bleu-c"></i>
                             <p>Romantique</p>
                         </div>
                     </li>
                     <li class='filtre' data-filter="animaux_admit">
-                        <div class='li-transformation flex'>
-                            <i class="fas fa-dog relative bleu bg-bleu-c"></i>                              
+                        <div class='li-transformation flexible'>
+                            <i class="fas fa-dog relative bleu fe-bleu-c"></i>                              
                             <p>Animaux autorisés</p>
                         </div>
                     </li>                 
                 </ul>   
 
                 <!--logo + information-->
-                <div class='info flex'>
+                <div class='info flexible'>
                     <a href='#'><i class="fas fa-info bleu centrer"></i></a>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
@@ -106,57 +106,57 @@
             <main>
 
                 <!--hébergement + les plus populaires-->
-                <section class="premiere-section flex">
+                <section class="premiere-section flexible">
                     <h5>alerte w3C byebye 8D</h5>
                     <!--zone hébergement-->
                     <article>
                         <h2 id="ancre1">Hébergement à Marseille</h2> 
-                        <div class='ensemble-carte-informative-article flex'>                       
+                        <div class='ensemble-carte-informative-article flexible'>                       
                             <!--Carte Informative -->
                             <a href='#'>
                                 <div class='carte-informative-article'>
-                                    <div class='cannebiere bg-position-centre bg-size-cover'></div>                                   
-                                    <p class='lieu bolder'>Auberge la Cannebière</p>
+                                    <div class='cannebiere fe-position-centre fe-taille-couvert'></div>                                   
+                                    <p class='lieu gras'>Auberge la Cannebière</p>
                                     <p class='prix'>Nuit à partir de<span>25</span>€</p>
                                     <p class='etoile'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
                                 </div>
                             </a>
                             <a href='#'>
                                 <div class='carte-informative-article'>                                  
-                                    <div class='port bg-position-centre bg-size-cover'></div>                                                               
-                                    <p class='lieu bolder'>Hôtel du port</p>
+                                    <div class='port fe-position-centre fe-taille-couvert'></div>                                                               
+                                    <p class='lieu gras'>Hôtel du port</p>
                                     <p class='prix'>Nuit à partir de<span>52</span>€</p>
                                     <p class='etoile'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
                                 </div>
                             </a>
                             <a href='#'>
                                 <div class='carte-informative-article'>                                
-                                    <div class='mouettes bg-position-centre bg-size-cover'></div>                                                                
-                                    <p class='lieu bolder'>Hôtel Les mouettes</p>
+                                    <div class='mouettes fe-position-centre fe-taille-couvert'></div>                                                                
+                                    <p class='lieu gras'>Hôtel Les mouettes</p>
                                     <p class='prix'>Nuit à partir de<span>76</span>€</p>
                                     <p class='etoile'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
                                 </div>
                             </a>
                             <a href='#'>
                                 <div class='carte-informative-article'>                                   
-                                    <div class='mer bg-position-centre bg-size-cover'></div>                                                                
-                                    <p class='lieu bolder'>Hôtel de la mer</p>
+                                    <div class='mer fe-position-centre fe-taille-couvert'></div>                                                                
+                                    <p class='lieu gras'>Hôtel de la mer</p>
                                     <p class='prix'>Nuit à partir de<span>46</span>€</p>
                                     <p class='etoile'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i><i class="fas fa-star bleu-c"></i></p>
                                 </div>
                             </a>
                             <a href='#'>
                                 <div class='carte-informative-article'>                                   
-                                    <div class='Panier bg-position-centre bg-size-cover'></div>                              
-                                    <p class='lieu bolder'>Auberge Le Panier</p>
+                                    <div class='panier fe-position-centre fe-taille-couvert'></div>                              
+                                    <p class='lieu gras'>Auberge Le Panier</p>
                                     <p class='prix'>Nuit à partir de<span>23</span>€</p>
                                     <p class='etoile'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
                                 </div>
                             </a>
                             <a href='#'>
                                 <div class='carte-informative-article'>                                 
-                                    <div class='Amina bg-position-centre bg-size-cover'></div>                                                          
-                                    <p class='lieu bolder'>Hôtel chez Amina</p>
+                                    <div class='amina fe-position-centre fe-taille-couvert'></div>                                                          
+                                    <p class='lieu gras'>Hôtel chez Amina</p>
                                     <p class='prix'>Nuit à partir de<span>96</span>€</p>
                                     <p class='etoile'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
                                 </div>
@@ -164,42 +164,42 @@
                         </div> 
 
                         <!--point de liste plus de choix-->
-                        <p class='plus bolder'><a href='#'>Afficher plus</a></p>
+                        <p class='plus gras'><a href='#'>Afficher plus</a></p>
 
                     </article>
 
                     <!--les plus populaires-->
-                    <aside class='populaire bg-gris'>
-                        <h2 class='relative'>Les plus populaires <a href='#'><i class="fas fa-chart-line absolute"></i></a></h2>
+                    <aside class='populaire fe-gris'>
+                        <h2 class='relative'>Les plus populaires <a href='#'><i class="fas fa-chart-line absolue"></i></a></h2>
                         <!--Carte Informative-->
-                        <div class='ensemble-carte-informative-populaire flex'> 
+                        <div class='ensemble-carte-informative-populaire flexible'> 
                             <a href='#'>
-                                <div class='carte-informative-populaire flex relative'>                                
-                                    <div class='soleil bg-position-centre bg-size-cover'></div>                                
+                                <div class='carte-informative-populaire flexible relative'>                                
+                                    <div class='soleil fe-position-centre fe-taille-couvert'></div>                                
                                     <div class='texte2'>                             
-                                        <p class='lieu bolder'>Hôtel Le soleil du matin</p>
+                                        <p class='lieu gras'>Hôtel Le soleil du matin</p>
                                         <p class='prix'>Nuit à partir de<span>128</span>€</p>
-                                        <p class='etoile absolute'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
+                                        <p class='etoile absolue'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
                                     </div>  
                                 </div>
                             </a>    
                             <a href='#'>
-                                <div class='carte-informative-populaire flex relative'>                                
-                                    <div class='coeur bg-position-centre bg-size-cover'></div>                                
+                                <div class='carte-informative-populaire flexible relative'>                                
+                                    <div class='coeur fe-position-centre fe-taille-couvert'></div>                                
                                     <div class='texte2'>                             
-                                        <p class='lieu bolder'>Au coeur de l'eau Chambres d'hôtes</p>
+                                        <p class='lieu gras'>Au coeur de l'eau Chambres d'hôtes</p>
                                         <p class='prix'>Nuit à partir de<span>71</span>€</p>
-                                        <p class='etoile absolute'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
+                                        <p class='etoile absolue'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
                                     </div>  
                                 </div>
                             </a>     
                             <a href='#'>
-                                <div class='carte-informative-populaire flex relative'>                                  
-                                    <div class='Blanc bg-position-centre bg-size-cover'></div>                                   
+                                <div class='carte-informative-populaire flexible relative'>                                  
+                                    <div class='blanc fe-position-centre fe-taille-couvert'></div>                                   
                                     <div class='texte2'>                              
-                                        <p class='lieu bolder'>Hôtel Tout bleu et Blanc</p>
+                                        <p class='lieu gras'>Hôtel Tout bleu et Blanc</p>
                                         <p class='prix'>Nuit à partir de<span>68</span>€</p>
-                                        <p class='etoile absolute'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
+                                        <p class='etoile absolue'><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu-c"></i></p>
                                     </div>
                                 </div>
                             </a>    
@@ -211,41 +211,41 @@
                 <section class='activité' id="ancre2">         
                     <h3>Activités à Marseille</h3>
                     <!--Carte Informative-->
-                    <div class='carte-activité flex'>
+                    <div class='carte-activité flexible'>
                         <a href='#'>
                             <div class='carte-informative3'>                                   
-                                <div class='VieuxPort bg-position-centre bg-size-cover'></div>                                                                
-                                <p class='lieu bolder'>Vieux Port</p>
+                                <div class='vieuxport fe-position-centre fe-taille-couvert'></div>                                                                
+                                <p class='lieu gras'>Vieux Port</p>
                             </div>
                         </a>  
                         <a href='#'>
                             <div class='carte-informative4'>                                 
-                                <div class='Pomegues bg-position-centre bg-size-cover'></div>                                                          
-                                <p class='lieu bolder'>Fort de Pomègues</p>
+                                <div class='pomegues fe-position-centre fe-taille-couvert'></div>                                                          
+                                <p class='lieu gras'>Fort de Pomègues</p>
                             </div>
                         </a>  
                         <a href='#'>
                             <div class='carte-informative5'>                              
-                                <div class='frioul bg-position-centre bg-size-cover'></div>                                                            
-                                <p class='lieu bolder'>Îles du Frioul</p>                            
+                                <div class='frioul fe-position-centre fe-taille-couvert'></div>                                                            
+                                <p class='lieu gras'>Îles du Frioul</p>                            
                             </div>
                         </a>  
                         <a href='#'>
                             <div class='carte-informative3'>                                
-                                <div class='PNC bg-position-centre bg-size-cover'></div>                                                 
-                                <p class='lieu bolder'>Parc National des Calanques</p>                                      
+                                <div class='pnc fe-position-centre fe-taille-couvert'></div>                                                 
+                                <p class='lieu gras'>Parc National des Calanques</p>                                      
                             </div>
                         </a>  
                         <a href='#'> 
                             <div class='carte-informative6'>                               
-                                <div class='NDDLG bg-position-centre bg-size-cover'></div>                                                         
-                                <p class='lieu bolder'>Notre-Dame-de-la-Garde</p>                                        
+                                <div class='nddlg fe-position-centre fe-taille-couvert'></div>                                                         
+                                <p class='lieu gras'>Notre-Dame-de-la-Garde</p>                                        
                             </div>
                         </a>  
                         <a href='#'>
                             <div class='carte-informative7'>
-                                <div class='longchamp bg-position-centre bg-size-cover'></div>                              
-                                <p class='lieu bolder'>Parc Longchamp</p>
+                                <div class='longchamp fe-position-centre fe-taille-couvert'></div>                              
+                                <p class='lieu gras'>Parc Longchamp</p>
                             </div>
                         </a>  
                     </div> 
@@ -254,10 +254,10 @@
             </main>
             
             <!--pied de page-->
-            <footer class='bg-gris'>
+            <footer class='fe-gris'>
 
                 <!--Information générale-->
-                <div class='pied-de-page flex'>
+                <div class='pied-de-page flexible'>
                     <div>
                         <h4>À propos</h4>
                         <p><a href='#'>Fonctionnement du site</a></p>
