@@ -233,8 +233,7 @@
         padding-right: 15px;
         font-size: 1em;
         font-weight: bold;
-        border: none;
-        cursor: pointer; 
+        border: none; 
     }
     .ensemble-filtre{
         flex-wrap: wrap;
@@ -252,6 +251,11 @@
         max-height: 51px; 
         margin: 0 8px 10px 5px;
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
+    }
+    label{ 
+        border-radius: 30px;
+        right: 2px;
+        cursor: pointer;
     }
     .filtre-transformation i{
         font-size: 1.1em;
@@ -273,7 +277,6 @@
     }
     .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
         border-radius: 30px; 
-        right: 2px;
     }
 
     /* interaction filtre */
