@@ -613,7 +613,7 @@
         /* article */
 
         .ensemble-carte-informative-article a{
-            width: 300px;
+            width: 45%;
             margin: 15px 20px;
         }
 
@@ -629,7 +629,7 @@
             height: 600px;
         }
         .carte-activité a{
-            width: 40%;
+            width: 45%;
         }
         .longchamp{
             background-position-y: -70px;
@@ -736,7 +736,7 @@
         }
         .premiere-section{
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
         /* article */
@@ -744,8 +744,7 @@
         article{
             background-color: #F2F2F2;
             border-radius: 20px;
-            max-width: 62%;
-            margin: 0 0 0 3%;
+            max-width: 61%;
             padding: 0 10px;
             min-height: 100%;
         }
@@ -760,15 +759,18 @@
         }
         .ensemble-carte-informative-article a{
             background-color: white;
-            width: 245px;
+            width: 29%;
             margin: 18px 0;
         }
         .carte-informative-article{
-            width: 245px;
+            width: 100%;
+        }
+        .cannebiere{
+            background-position: center;
         }
         .cannebiere, .port, .mouettes, .mer, .panier, .amina{
             margin: 5px auto;
-            width: 234px;
+            width: 96%;
             height: 115px;
         }
         .plus {
@@ -781,9 +783,9 @@
         .populaire{
             max-width: 29%;
             border-radius: 20px;
-            margin: 0 3.5% 0 0; 
             padding: 0 10px;
             min-height: 100%;
+            margin-top: 0;
         }
         .populaire h2{
             padding-top: 20px;  
@@ -797,12 +799,12 @@
             align-content: space-around;
         }
         .ensemble-carte-informative-populaire a{
-            width: 343px;
+            width: 84%;
             height: 145px;
             margin: 2% 0;
         }
         .carte-informative-populaire{
-            width: 343px;
+            width: 100%;
         }
         
         /* activité */
