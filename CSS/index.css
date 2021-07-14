@@ -261,13 +261,6 @@
     .filtre-transformation i{
         font-size: 1.1em;
     }
-    /* plus d'actualité
-    .filtre-transformation p{
-        text-indent: 5px;
-        padding-right: 15px;
-        border-radius: 30px;
-    }
-    */
 
     /*icones de filtres */
 
@@ -737,11 +730,6 @@
         .filtre{
             margin-right: 20px;
         }
-        /* plus d'actualité
-        .filtre-transformation p{
-            padding-right: 25px;
-            text-indent: 15px;
-        } */
 
         /* section hero */
 
