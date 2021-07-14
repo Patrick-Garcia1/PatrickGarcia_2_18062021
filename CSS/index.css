@@ -230,16 +230,14 @@
         font-family: 'Raleway', sans-serif;
         background-color: transparent;
         color: black;
-        border-radius: 15px;
         padding-right: 15px;
         font-size: 1em;
         font-weight: bold;
         border: none;
+        cursor: pointer; 
     }
     .ensemble-filtre{
-        font-size: 1em;
         flex-wrap: wrap;
-        padding: 0;
         height: 100%;
     }
     .ensemble-filtre p{
