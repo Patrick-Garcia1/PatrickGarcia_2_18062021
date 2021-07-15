@@ -230,6 +230,7 @@
         font-size: 1em;
         font-weight: bold;
         border: none; 
+        cursor:pointer;
     }
     .ensemble-filtre{
         flex-wrap: wrap;
@@ -492,7 +493,8 @@
         margin: 0 0 60px 0;
     }
     .activité h3{
-        margin: 22px 0 22px 5%;
+        margin: 10px 0 22px 5%;
+        padding-top: 12px;
         font-size: 1.3em;
     }
     .carte-activité{
