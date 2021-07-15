@@ -426,9 +426,11 @@
         flex-flow: row wrap;
         justify-content: center;
         margin-top: 10px;
+        height: 465px;
     }
     .ensemble-carte-informative-populaire a{
-        width: 90%;
+        width: 80%;
+        height: 145px;
     }
     .carte-informative-populaire{
         align-items: center;
