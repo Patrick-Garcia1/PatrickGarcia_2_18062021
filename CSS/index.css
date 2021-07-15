@@ -120,7 +120,6 @@
         order: 3;
         text-align: end;
         margin-right: 20px;
-        color: #0065FC;
     }
     
     /* interaction menu */
@@ -187,9 +186,6 @@
         font-weight: 700;
         border: none;
         font-family: 'Raleway', sans-serif;
-    }
-    input[placeholder], input[required]{
-        color: black;
     }
     .texte{
         display: none;
@@ -385,7 +381,6 @@
 
     .cannebiere{
         background-image: url(../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-        background-position-y: -50px;
     }
     .port{
         background-image: url(../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
@@ -502,14 +497,13 @@
     }
     .carte-activité{
         flex-flow: column wrap;
-        justify-content: space-between;
-        height: 1255px;
-        align-content: space-around;
+        height: 100%;
     }
     .carte-activité a{
         border-radius: 20px;
         box-shadow: 1px 3px 8px 1px #e2e2e2;
         width: 90%;
+        margin: 10px auto;
     }
     .carte-informative3, .carte-informative4, .carte-informative5, .carte-informative6, .carte-informative7{
         height: 190px;
@@ -626,7 +620,8 @@
         /* activité */
 
         .carte-activité{
-            height: 600px;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
         }
         .carte-activité a{
             width: 45%;
@@ -666,7 +661,6 @@
             padding: 0;
         }
         nav ul li{
-            list-style: none;
             min-width: 30%; 
         } 
         .un, .deux, .trois{
@@ -674,6 +668,8 @@
             padding: 50px 0 0 0;
             border-bottom: none;
             border-top: 2px solid transparent;
+        }
+        .trois{
             text-align: center;
         }
 
@@ -705,7 +701,7 @@
 
         /* bouton moteur de recherche */
 
-        button[type='submit']{
+        form button[type='submit']{
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
         }
@@ -753,8 +749,6 @@
             margin: 18px 0 10px 5%; 
         }
         .ensemble-carte-informative-article{
-            flex-flow: row wrap;
-            justify-content: space-evenly;
             align-content: space-around;
         }
         .ensemble-carte-informative-article a{
@@ -764,9 +758,6 @@
         }
         .carte-informative-article{
             width: 100%;
-        }
-        .cannebiere{
-            background-position: center;
         }
         .cannebiere, .port, .mouettes, .mer, .panier, .amina{
             margin: 5px auto;
