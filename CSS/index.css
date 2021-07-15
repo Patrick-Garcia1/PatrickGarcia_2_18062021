@@ -347,17 +347,19 @@
     .ensemble-carte-informative-article{
         flex-flow: row wrap;
         justify-content: space-evenly;
+        align-content: space-evenly;
+        height: 1260px;  
     }
     .ensemble-carte-informative-article a{
-        margin: 5px 0;
         width: 90%;
     }
     .carte-informative-article{
         border-radius: 18px; 
-        height: 195px;
+        height: 190px;
+        margin-top: 5px;
     }
     .carte-informative-article p{
-        margin: 2px 20px 2px 5%;
+        margin: 2px 20px 2px 7%;
     }
     .prix{
         font-size: 0.8em;
@@ -399,10 +401,10 @@
         background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     }
     .cannebiere, .port, .mouettes, .mer, .panier, .amina{
-        margin: 5px 5px;
         height: 115px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        margin: 0 5px;
     }
     
     /*les plus populaires*/
@@ -426,7 +428,6 @@
         margin-top: 10px;
     }
     .ensemble-carte-informative-populaire a{
-        margin: 5px 0;
         width: 90%;
     }
     .carte-informative-populaire{
@@ -608,9 +609,11 @@
 
         /* article */
 
+        .ensemble-carte-informative-article{
+            height: 675px;
+        }
         .ensemble-carte-informative-article a{
             width: 45%;
-            margin: 15px 20px;
         }
 
         /* populaire */
@@ -743,32 +746,30 @@
             background-color: #F2F2F2;
             border-radius: 20px;
             max-width: 61%;
-            padding: 0 10px;
+            padding: 0 1%;
             min-height: 100%;
         }
         article h2{
             padding-top: 20px; 
-            margin: 18px 0 10px 5%; 
+            margin: 18px 0 10px 3%; 
         }
         .ensemble-carte-informative-article{
             align-content: space-around;
+            height: 450px;
         }
         .ensemble-carte-informative-article a{
             background-color: white;
             width: 29%;
-            margin: 18px 0;
         }
         .carte-informative-article{
             width: 100%;
         }
         .cannebiere, .port, .mouettes, .mer, .panier, .amina{
-            margin: 5px auto;
-            width: 96%;
             height: 115px;
         }
         .plus {
             margin-left: 2%;     
-            padding: 18px 0 20px 10px;
+            padding: 25px 0 20px 10px;
         }
 
         /* populaire */
@@ -776,13 +777,13 @@
         .populaire{
             max-width: 29%;
             border-radius: 20px;
-            padding: 0 10px;
+            padding: 0;
             min-height: 100%;
             margin-top: 0;
         }
         .populaire h2{
             padding-top: 20px;  
-            margin: 18px 0 10px 5%; 
+            margin: 18px 0 10px 8%; 
         }
         .populaire h2 i{
             right: 25px;
@@ -793,8 +794,6 @@
         }
         .ensemble-carte-informative-populaire a{
             width: 84%;
-            height: 145px;
-            margin: 2% 0;
         }
         .carte-informative-populaire{
             width: 100%;
