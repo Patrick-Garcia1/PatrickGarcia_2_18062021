@@ -416,13 +416,14 @@
         height: 145px;
     }
     .carte-informative-populaire img{
-        width: 33vw;
+        width: 100%;
         height: 134px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         object-fit: cover;
     }
     .texte2{
+        width: 57%;
         height: 105px;
         margin-left: 4.5%;
     }
@@ -439,7 +440,7 @@
     /*carte spécifique populaire*/
 
     .soleil, .coeur, .blanc{
-        width: 33vw;
+        width: 38%;
         height: 134px;
         margin-left: 5px;
         border-top-left-radius: 15px;
