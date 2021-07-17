@@ -544,7 +544,7 @@
         color: #0065FC;
     }
 
-    /* media 450px à 819px */
+    /* media 820px à 1349px */
 
     @media screen and (min-width: 820px) and (max-width: 1349px){
         /* moteur de recherche */
