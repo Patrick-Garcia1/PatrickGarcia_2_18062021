@@ -46,15 +46,6 @@
         background-color: #DEEBFF;
     }
 
-    /* background image */
-
-    .fe-position-centre{
-        background-position: center;
-    }
-    .fe-taille-couvert{
-        background-size: cover;
-    }
-
     /* texte */
 
     a{
@@ -359,6 +350,13 @@
         height: 190px;
         margin-top: 5px;
     }
+    .carte-informative-article img{
+        width: 100%;
+        height: 115px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
     .carte-informative-article p{
         margin: 2px 20px 2px 7%;
     }
@@ -383,24 +381,6 @@
 
     /* spécificité carte hebergement */
 
-    .cannebiere{
-        background-image: url(../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    }
-    .port{
-        background-image: url(../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    }
-    .mouettes{
-        background-image: url(../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    }
-    .mer{
-        background-image: url(../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    }
-    .panier{
-        background-image: url(../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    }
-    .amina{
-        background-image: url(../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    }
     .cannebiere, .port, .mouettes, .mer, .panier, .amina{
         height: 115px;
         border-top-left-radius: 15px;
@@ -435,6 +415,13 @@
         border-radius: 18px; 
         height: 145px;
     }
+    .carte-informative-populaire img{
+        width: 33vw;
+        height: 134px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        object-fit: cover;
+    }
     .texte2{
         height: 105px;
         margin-left: 4.5%;
@@ -451,17 +438,8 @@
     
     /*carte spécifique populaire*/
 
-    .soleil{
-        background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    }
-    .coeur{
-        background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    }
-    .blanc{
-        background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-    }
     .soleil, .coeur, .blanc{
-        min-width: 36%;
+        width: 33vw;
         height: 134px;
         margin-left: 5px;
         border-top-left-radius: 15px;
@@ -504,6 +482,13 @@
         align-items: center;
         height: 1300px;
     }
+    .carte-activité img{
+        width: 100%;
+        height: 133px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
     .carte-activité a{
         border-radius: 20px;
         box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -521,26 +506,6 @@
 
     /*carte spécifique activité*/
 
-    .vieuxport{ 
-        background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    }
-    .pnc{
-        background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    }
-    .pomegues{
-        background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    }
-    .frioul{     
-        background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    }
-    .nddlg{
-        background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-        background-position-y: -30px;
-    }
-    .longchamp{
-        background-image: url(../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-        background-position-y: -80px;
-    }
     .vieuxport, .pnc, .pomegues, .frioul, .nddlg, .longchamp{
         height: 133px;
         border-top-left-radius: 20px;
@@ -579,27 +544,7 @@
         color: #0065FC;
     }
 
-    /* media 600px à 819px */
-
-    @media screen and (min-width: 600px) and (max-width: 819px){
-        .port{
-            background-position-y: 200px;
-        }
-        .mouettes{
-            background-position-y: 200px;
-        }
-        .mer{
-            background-position-y: 300px;
-        }
-        .amina{
-            background-position-y: 450px;
-        }
-        .longchamp{
-            background-position-y: -160px;
-        }
-    }
-
-    /* media 820px à 1349px */
+    /* media 450px à 819px */
 
     @media screen and (min-width: 820px) and (max-width: 1349px){
         /* moteur de recherche */
@@ -614,13 +559,7 @@
             height: 675px;
         }
         .ensemble-carte-informative-article a{
-            width: 45%;
-        }
-
-        /* populaire */
-
-        .ensemble-carte-informative-populaire a{
-            width: 80%;
+            width: 40%;
         }
 
         /* activité */
@@ -631,10 +570,7 @@
             height: 675px;
         }
         .carte-activité a{
-            width: 45%;
-        }
-        .longchamp{
-            background-position-y: -70px;
+            width: 40%;
         }
     }
 
@@ -778,9 +714,6 @@
         .carte-informative-article{
             width: 100%;
         }
-        .cannebiere, .port, .mouettes, .mer, .panier, .amina{
-            height: 115px;
-        }
         .plus {
             margin-left: 2%;     
             padding: 25px 0 20px 10px;
@@ -813,7 +746,13 @@
         .carte-informative-populaire{
             width: 100%;
         }
-        
+        .carte-informative-populaire img{
+            width: 100%;
+        }
+        .soleil, .coeur, .blanc {
+            min-width: 36%;
+            width: 36%;
+        }
         /* activité */
 
         .activité{
@@ -860,31 +799,29 @@
         
         /*carte spécifique activité*/
         
-        .vieuxport{
+        .vieuxport, .vieuxport img{
             Height: 390px;
             width: 302px;
         }
-        .pnc{
+        .pnc, .pnc img{
             Height: 390px;
             width: 302px;
         }
-        .pomegues{
+        .pomegues, .pomegues img{
             Height: 180px;
             width: 302px;
         }
-        .frioul{
+        .frioul, .frioul img{
             Height: 110px;
             width: 302px;
         }
-        .nddlg{
+        .nddlg, .nddlg img{
             Height: 140px;
             width: 302px;
-            background-position: top;
         }
-        .longchamp{
+        .longchamp, .longchamp img{
             Height: 154px;
             width: 302px;
-            background-position-y: 0px;
         }
 
         /* pied de page */
