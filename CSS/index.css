@@ -64,6 +64,9 @@
     .bleu-c{
         color: var(--couleur-sec);
     }
+    .gris{
+        color: var(--couleur-tert);
+    }
     .fe-gris{
         background-color: var(--couleur-tert);
     }
