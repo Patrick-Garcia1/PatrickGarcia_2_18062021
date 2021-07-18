@@ -6,20 +6,44 @@
     *{
         box-sizing: border-box;
     }
+    :root{   
+        
+        /* mélange de ciblage dans les couleurs, il faudrait 50 variables pour chaque role ce qui alourdirait le code */
+        
+        --couleur-o: transparent;
+        --couleur-prem: #0065FC;  
+        --couleur-sec: #DEEBFF;
+        --couleur-tert: #F2F2F2;
+        --couleur-qua: black;  
 
+        /* bordure */
+
+        --petite-bord: 15px;
+        --grande-bord: 20px;
+
+        /* font */
+
+        --raleway: 'Raleway', sans-serif;
+        --gras: 700;
+        --h1: 1.4em;
+        --h2: 1.4em;
+        --h3: 1.3em;
+        --h4: 1.1em;
+        --p: 1em;
+    }
     body{
-        font-family: 'Raleway', sans-serif;
+        font-family: var(--raleway);
         margin: 0 auto;
         padding: 0;
-        color: black;
+        color: var(--couleur-qua);
         font-weight: 500;
     }
     ::selection{
-        color: #0065FC;
-        background-color: #F2F2F2;
+        color: var(--couleur-prem);
+        background-color: var(--couleur-tert);
     }
     :link{
-        color: black;
+        color: var(--couleur-qua);
     }
     .flexible{
         display: flex;
@@ -34,16 +58,16 @@
     /* couleur recommandées */
 
     .bleu{
-        color: #0065FC;
+        color: var(--couleur-prem);
     }
     .bleu-c{
-        color: #DEEBFF;
+        color: var(--couleur-sec);
     }
     .fe-gris{
-        background-color: #F2F2F2;
+        background-color: var(--couleur-tert);
     }
     .fe-bleu-c{
-        background-color: #DEEBFF;
+        background-color: var(--couleur-sec);
     }
 
     /* texte */
@@ -52,13 +76,13 @@
         text-decoration: none; 
     }
     :visited{
-        color: black;
+        color: var(--couleur-qua);
     }
     .centrer{
         text-align: center;
     }
     .gras{
-        font-weight: bolder;
+        font-weight: var(--gras);
     }
 
     /* byebye alerte w3c*/
@@ -104,7 +128,7 @@
     }
     .un, .deux{
         padding: 37px 0 15px 0;
-        border-bottom: 2px solid #F2F2F2;
+        border-bottom: 2px solid var(--couleur-tert);
     }
     .trois{
         align-self: flex-start;
@@ -116,17 +140,17 @@
     /* interaction menu */
 
     .trois a:link{
-        color: #0065FC;
+        color: var(--couleur-prem);
     }
     .trois a:visited{
-        color: #0065FC;
+        color: var(--couleur-prem);
     }
     .un:hover, .deux:hover{
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 2px solid var(--couleur-prem);
         cursor: pointer;
     }
     .un:hover a, .deux:hover a{
-        color: #0065FC;
+        color: var(--couleur-prem);
     } 
 
     /* tête de page */
@@ -141,10 +165,10 @@
         margin-top: 30px;
     }
     .slogan h1{
-        font-size: 1.4em;
+        font-size:var(--h1);
     }
     .slogan p{
-        font-size: 1em;
+        font-size: var(--p);
     }
 
     /* moteur de recherche header */
@@ -154,16 +178,16 @@
         margin: 25px auto;
         height: 50px;
         align-items: center;
-        border: 1px solid #F2F2F2;
-        border-radius: 15px;
+        border: 1px solid var(--couleur-tert);
+        border-radius:var(--petite-bord);
     }
 
     /*zone de l'icone*/
 
     .localisation{
         padding: 17px 19px 17px 19px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-top-left-radius: var(--petite-bord);
+        border-bottom-left-radius: var(--petite-bord);
         font-size: 1.1em;
     }
 
@@ -173,10 +197,10 @@
         height: 30px;
         width: 100%;
         margin: 10px 10px;  
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: 1em;
+        font-weight: var(--gras);
         border: none;
-        font-family: 'Raleway', sans-serif;
+        font-family: var(--raleway);
     }
     .texte{
         display: none;
@@ -185,11 +209,11 @@
     /*zone du bouton*/
 
     form[action="traitement.php"] button{
-        background-color: #0065FC;
+        background-color: var(--couleur-prem);
         color: white;
         height: 50px;
         border: none;
-        border-radius: 15px;
+        border-radius: var(--petite-bord);
         font-size: 1.2em;
         padding: 0 15px;
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
@@ -201,9 +225,9 @@
     /* interaction moteur de recherche */
 
     form[action="traitement.php"] button:hover{
-        background-color: #DEEBFF;
-        color: #0065FC;
-        border-color: #F2F2F2;
+        background-color: var(--couleur-sec);
+        color: var(--couleur-prem);
+        border-color: var(--couleur-tert);
         border-left: none;
         cursor: pointer;
     }
@@ -214,12 +238,12 @@
         border: none;
     }
     form[action='filtre.php'] input[type='button']{
-        font-family: 'Raleway', sans-serif;
-        background-color: transparent;
-        color: black;
+        font-family: var(--raleway);
+        background-color: var(--couleur-o);
+        color: var(--couleur-qua);
         padding-right: 15px;
         font-size: 1em;
-        font-weight: bold;
+        font-weight: var(--gras);
         border: none; 
         cursor:pointer;
     }
@@ -270,18 +294,18 @@
     /* interaction filtre */
 
     .ensemble-filtre p a:hover{
-        color: #0065FC; 
+        color: var(--couleur-prem); 
     }
     .filtre-transformation:hover{
-        color: #0065FC;
-        background-color: #DEEBFF; 
-        border-color: transparent;
-        box-shadow: 1px 1px 4px 1px black;
+        color: var(--couleur-prem);
+        background-color: var(--couleur-sec); 
+        border-color: var(--couleur-o);
+        box-shadow: 1px 1px 4px 1px var(--couleur-qua);
         cursor: pointer;
     }
     .filtre-transformation:hover i{
-        background-color: #0065FC;
-        color: #DEEBFF;
+        background-color: var(--couleur-prem);
+        color: var(--couleur-sec);
     }
 
     /* information header */
@@ -304,8 +328,8 @@
     /* interaction information */
 
     .info a:hover i{
-        color: #DEEBFF;
-        background-color: #0065FC;
+        color: var(--couleur-sec);
+        background-color: var(--couleur-prem);
     }
 
     /* section hero */
@@ -325,13 +349,13 @@
 
     .ensemble-carte-informative-article a, .ensemble-carte-informative-populaire a{
         box-shadow: 1px 3px 8px 1px #e2e2e2;
-        border-radius: 18px; 
+        border-radius: var(--grande-bord); 
     }
 
     /* hebergement */
 
     article h2{
-        font-size: 1.4em; 
+        font-size: var(--h2); 
         padding-top: 18px;
         margin-left: 5%;
         margin-bottom: 10px;
@@ -346,7 +370,7 @@
         width: 90%;
     }
     .carte-informative-article{
-        border-radius: 18px; 
+        border-radius: var(--grande-bord); 
         height: 190px;
         margin-top: 5px;
     }
@@ -354,8 +378,8 @@
         width: 100%;
         height: 115px;
         object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: var(--petite-bord);
+        border-top-right-radius: var(--petite-bord);
     }
     .carte-informative-article p{
         margin: 2px 20px 2px 7%;
@@ -383,8 +407,8 @@
 
     .cannebiere, .port, .mouettes, .mer, .panier, .amina{
         height: 115px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: var(--petite-bord);
+        border-top-right-radius: var(--petite-bord);
         margin: 0 5px;
     }
     
@@ -392,7 +416,7 @@
 
     .populaire h2{
         margin: 0 5%;
-        font-size: 1.4em; 
+        font-size: var(--h2); 
         padding-top: 38px;
     }
     .populaire h2 i{
@@ -412,14 +436,14 @@
     .carte-informative-populaire{
         align-items: center;
         background-color: white;
-        border-radius: 18px; 
+        border-radius: var(--grande-bord); 
         height: 145px;
     }
     .carte-informative-populaire img{
         width: 100%;
         height: 134px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-top-left-radius: var(--petite-bord);
+        border-bottom-left-radius: var(--petite-bord);
         object-fit: cover;
     }
     .texte2{
@@ -443,27 +467,27 @@
         width: 38%;
         height: 134px;
         margin-left: 5px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-top-left-radius: var(--petite-bord);
+        border-bottom-left-radius: var(--petite-bord);
     }
 
     /* interaction populaire */
 
     .populaire h2 i:hover{
-        color: #0065FC;
+        color: var(--couleur-prem);
         cursor: pointer;
     }
 
     /* interaction cartes article et populaire */
 
     .ensemble-carte-informative-article a:hover, .ensemble-carte-informative-populaire a:hover{
-        box-shadow: 2px 3px 6px 2px black;
+        box-shadow: 2px 3px 6px 2px var(--couleur-qua);
     }
     
     /* interaction du main */
 
     .plus a:hover{
-        color: #0065FC;
+        color: var(--couleur-prem);
     }
 
     /* Activités à Marseille */
@@ -474,7 +498,7 @@
     .activité h3{
         margin: 10px 0 10px 5%;
         padding-top: 12px;
-        font-size: 1.3em;
+        font-size: var(--h3);
     }
     .carte-activité{
         flex-flow: column wrap;
@@ -487,21 +511,21 @@
         width: 100%;
         height: 133px;
         object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: var(--grande-bord);
+        border-top-right-radius: var(--grande-bord);
     }
     .carte-activité a{
-        border-radius: 20px;
+        border-radius: var(--grande-bord);
         box-shadow: 1px 3px 8px 1px #e2e2e2;
         width: 90%;
     }
     .carte-informative3, .carte-informative4, .carte-informative5, .carte-informative6, .carte-informative7{
         height: 190px;
-        border-radius: 20px; 
+        border-radius: var(--grande-bord); 
     }
     .carte-informative3 p, .carte-informative4 p, .carte-informative5 p, .carte-informative6 p, .carte-informative7 p{
         margin-left: 3%;
-        font-size: 1em;
+        font-size: var(--p);
         margin-top: 20px;
     }
 
@@ -509,14 +533,14 @@
 
     .vieuxport, .pnc, .pomegues, .frioul, .nddlg, .longchamp{
         height: 133px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: var(--grande-bord);
+        border-top-right-radius: var(--grande-bord);
     }
 
     /* interaction activité */
 
     .carte-activité a:hover{
-        box-shadow: 2px 3px 6px 2px black;
+        box-shadow: 2px 3px 6px 2px var(--couleur-qua);
     }
 
     /* pied de page */
@@ -536,13 +560,13 @@
     }
     .pied-de-page div H4{
         padding: 15px 0 10px 0;
-        font-size: 1.1em;
+        font-size: var(--h4);
     }
     
     /* interaction pied de page */
 
     .pied-de-page div a:hover{
-        color: #0065FC;
+        color: var(--couleur-prem);
     }
 
     /* media 820px à 1349px */
@@ -623,7 +647,7 @@
             order: unset;
             padding: 50px 0 0 0;
             border-bottom: none;
-            border-top: 2px solid transparent;
+            border-top: 2px solid var(--couleur-o);
         }
         .trois{
             text-align: center;
@@ -633,7 +657,7 @@
 
         .un:hover, .deux:hover{
             border-bottom: none;
-            border-top: 2px solid #0065FC;
+            border-top: 2px solid var(--couleur-prem);
         }
 
         /* header */
@@ -694,8 +718,8 @@
         /* article */
 
         article{
-            background-color: #F2F2F2;
-            border-radius: 20px;
+            background-color: var(--couleur-tert);
+            border-radius: var(--grande-bord);
             max-width: 61%;
             padding: 0 1%;
             min-height: 100%;
@@ -724,7 +748,7 @@
 
         .populaire{
             max-width: 29%;
-            border-radius: 20px;
+            border-radius: var(--grande-bord);
             padding: 0;
             min-height: 100%;
             margin-top: 0;
@@ -771,7 +795,7 @@
         }
         .carte-informative3 p, .carte-informative4 p, .carte-informative5 p, .carte-informative6 p, .carte-informative7 p{
             text-indent: 18px;
-            font-size: 0.98em;
+            font-size: var(--p);
             margin-top: 20px;
         }
         
@@ -779,23 +803,23 @@
         
         .carte-informative3{
             Height: 444px;
-            border-radius: 20px; 
+            border-radius: var(--grande-bord); 
         }
         .carte-informative4{
             height: 235px;
-            border-radius: 20px; 
+            border-radius: var(--grande-bord); 
         }
         .carte-informative5{
             height: 165px;
-            border-radius: 20px; 
+            border-radius: var(--grande-bord); 
         }
         .carte-informative6{
             height: 195px;
-            border-radius: 20px; 
+            border-radius: var(--grande-bord); 
         }
         .carte-informative7{
             height: 210px;
-            border-radius: 20px; 
+            border-radius: var(--grande-bord); 
         }
         
         /*carte spécifique activité*/
