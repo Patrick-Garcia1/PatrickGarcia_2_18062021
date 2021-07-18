@@ -789,6 +789,7 @@
         .carte-activité{
             height: 445px;
             align-content: space-between;
+            justify-content: space-between;
         }
         .carte-activité a{
             width: unset;
