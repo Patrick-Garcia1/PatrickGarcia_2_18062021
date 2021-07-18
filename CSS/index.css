@@ -603,8 +603,8 @@
     @media screen and (min-width: 1024px){
 
         :root{
-            --p: 0.8em;
-            --pprix: 0.7em;
+            --p: 0.79em;
+            --pprix: 0.69em;
         }
 
         /* body */
@@ -870,7 +870,7 @@
 
     /* ajustement variable > 1250px */
 
-    @media screen and (min-width: 1250px){
+    @media screen and (min-width: 1260px){
         :root{
             --p: 1em;
             --pprix: 0.8em;
