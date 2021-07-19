@@ -38,6 +38,7 @@
         padding: 0;
         color: var(--couleur-qua);
         font-weight: 500;
+        height: 100vh;
     }
     ::selection{
         color: var(--couleur-prem);
@@ -264,7 +265,7 @@
         border-radius: 30px;
         border-left: none;
         align-items: center;
-        max-height: 51px; 
+        max-height: 51.6px; 
         margin: 0 8px 10px 5px;
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
     }
@@ -709,7 +710,6 @@
 
         body{
             max-width: 1600px;
-            height: 1874px;
         }
         
         /* main */
