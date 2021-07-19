@@ -306,6 +306,11 @@
         border-color: var(--couleur-o);
         box-shadow: 1px 1px 4px 1px var(--couleur-qua);
         cursor: pointer;
+        -webkit-transition: 0.5s box-shadow;
+        -ms-transition: 0.5s box-shadow;
+        -moz-transition: 0.5s box-shadow;
+        -o-transition: 0.5s box-shadow;
+        transition: 0.5s box-shadow;
     }
     .filtre-transformation:hover i{
         background-color: var(--couleur-prem);
@@ -488,7 +493,12 @@
     /* interaction cartes article et populaire */
 
     .ensemble-carte-informative-article a:hover, .ensemble-carte-informative-populaire a:hover{
-        box-shadow: 2px 3px 6px 2px var(--couleur-qua);
+        box-shadow: 2px 3px 8px 2px var(--couleur-qua);
+        -webkit-transition: 0.5s box-shadow;
+        -ms-transition: 0.5s box-shadow;
+        -moz-transition: 0.5s box-shadow;
+        -o-transition: 0.5s box-shadow;
+        transition: 0.5s box-shadow;
     }
     
     /* interaction du main */
@@ -547,7 +557,12 @@
     /* interaction activité */
 
     .carte-activité a:hover{
-        box-shadow: 2px 3px 6px 2px var(--couleur-qua);
+        box-shadow: 2px 3px 8px 2px var(--couleur-qua);
+        -webkit-transition: 0.5s box-shadow;
+        -ms-transition: 0.5s box-shadow;
+        -moz-transition: 0.5s box-shadow;
+        -o-transition: 0.5s box-shadow;
+        transition: 0.5s box-shadow;
     }
 
     /* pied de page */
