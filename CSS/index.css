@@ -198,9 +198,9 @@
     /*zone du texte*/
 
     input[type='search']{
-        height: 30px;
+        height: 48px;
         width: 100%;
-        margin: 10px 10px;  
+        margin: 0 10px;  
         font-size: 1em;
         font-weight: var(--gras);
         border: none;
