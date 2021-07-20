@@ -105,11 +105,12 @@
 
     /*logo*/
 
-    .logo-menu p{
-        left: 15px;
-        top: 3px;
+    .logo-menu figure{
+        margin: 0;
+        left: 20px;
+        top: 25px;
     }
-    .logo-menu p img{
+    .logo-menu figure img{
         width: 100px;
     }
 
@@ -160,33 +161,34 @@
 
     /* tête de page */
 
-    header{
+    section[class='corp']{
         margin: 0 5%;
+        padding-bottom: 10px;
     }
 
     /* slogan */
 
-    .slogan{
-        margin-top: 30px;
-    }
-    .slogan h1{
+    h1[class='gras']{
+        margin: 30px 0 0 0;
         font-size:var(--h1);
     }
-    .slogan p{
+    .p-un{
+        margin: 10px 0 18px 0;
         font-size: 1em;
     }
 
-    /* moteur de recherche header */
+    /* moteur de recherche corp */
 
     form{
         width: 100%;
-        margin: 25px auto;
         height: 50px;
         align-items: center;
         border: 1px solid var(--couleur-tert);
         border-radius:var(--petite-bord);
     }
-
+    form[class='recherche flexible']{
+        margin: 35px auto;
+    }
     /*zone de l'icone*/
 
     .localisation{
@@ -237,20 +239,10 @@
         cursor: pointer;
     }
 
-    /* filtre header */
+    /* filtre corp */
 
     form[action='filtre.php']{
         border: none;
-    }
-    form[action='filtre.php'] input[type='button']{
-        font-family: var(--raleway);
-        background-color: var(--couleur-o);
-        color: var(--couleur-qua);
-        padding-right: 15px;
-        font-size: 1em;
-        font-weight: var(--gras);
-        border: none; 
-        cursor:pointer;
     }
     .ensemble-filtre{
         flex-wrap: wrap;
@@ -258,39 +250,40 @@
     }
     .ensemble-filtre p{
         width: 100%;
+        margin-top: 0;
     }
     .filtre-transformation{
-        flex-direction: row-reverse;
+        flex-direction: row;
+        margin: 5px 10px 5px 0;
         border: 2px solid rgb(199, 198, 198);
         border-radius: 30px;
         border-left: none;
         align-items: center;
         max-height: 51.6px; 
-        margin: 0 8px 10px 5px;
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
-    }
-    label{ 
-        border-radius: 30px;
-        right: 2px;
-        cursor: pointer;
     }
     .filtre-transformation i{
         font-size: 1.1em;
+        right: 2.5px;
+    }
+    .filtre-transformation span{
+        margin: 0 15px 0 10px;
+        
     }
 
     /*icones de filtres */
 
     .fa-money-bill-wave{
-        padding: 17px 15px 17px 15px;
+        padding: 17px 14.8px 17px 14.8px;
     }
     .fa-child{
-        padding: 17px 19px 17px 19px;
+        padding: 17px 19.2px 17px 19.2px;
     }
     .fa-heart{
         padding: 17px 17px 17px 17px;
     }
     .fa-dog{
-        padding: 17px 16px 17px 16px;
+        padding: 17px 15.9px 17px 15.9px;
     }
     .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
         border-radius: 30px; 
@@ -318,10 +311,16 @@
         color: var(--couleur-sec);
     }
 
-    /* information header */
+    /* information corp */
 
+    figure[class='info flexible']{
+        margin: 30px 0 35px 10px;
+    }
     .info{
-        margin-top: 30px;
+        height: 20px;
+    }
+    .info a{
+        border-radius: 10px;
     }
     .info i {
         font-size: 0.7em;
@@ -329,9 +328,9 @@
         border-radius: 12px;
         min-width: 20px;
         height: 20px;
-        padding: 3px 2px 2px 2px;
+        padding: 5px 9px 17px 9px;
     }
-    .info p{
+    .info figcaption{
         margin: 0 0 25px 10px;
     }
 
@@ -648,27 +647,25 @@
 
     /* pied de page */
 
-    footer{
+    .pied-de-page{  
         padding-bottom: 40px; 
         padding-top: 10px;
-    }
-    .pied-de-page{   
         line-height: 0.75em;
         flex-flow: row wrap;
         justify-content: space-between;
         margin: 0 1.3%;
     }
-    .pied-de-page div{
+    .pied-de-page section{
         margin: 0 5.9%;
     }
-    .pied-de-page div H4{
+    .pied-de-page section H4{
         padding: 15px 0 10px 0;
         font-size: var(--h4);
     }
     
     /* interaction pied de page */
 
-    .pied-de-page div a:hover{
+    .pied-de-page section a:hover{
         color: var(--couleur-prem);
     }
 
@@ -714,7 +711,7 @@
         
         /* main */
 
-        #main-wrapper main{
+        main{
             margin-top: 10px;
         }
 
@@ -725,9 +722,9 @@
         .logo-menu{
             height: 95px;
         }
-        .logo-menu p{
-            left: 50px;
-            top: 30px;
+        .logo-menu figure{
+            left: 40px;
+            top: 45px;
         }
 
         /* menu */
@@ -763,15 +760,16 @@
             border-top: 2px solid var(--couleur-prem);
         }
 
-        /* header */
+        /* section corp */
 
-        header{
+        section[class='corp']{
             margin: 0 3%;
+            padding-bottom: 0;
         }
 
         /* slogan */
 
-        .slogan{
+        .p-un{
             line-height: 1.1em;
         }
 
@@ -802,17 +800,18 @@
         }
         .ensemble-filtre p{
             width: unset;
-            margin: 0 30px 0 10px;
+            margin: 0 35px 0 10px;
         }
         .filtre-transformation{
-            margin-right: 20px;
+            margin: 7px 20px 7px 0;
+        }
+        .filtre-transformation span{
+            margin: 0 20px 0 15px;
+            font-size: 1.1em;
         }
 
         /* section hero */
 
-        main{
-            margin-top: 40px;
-        }
         .premiere-section{
             flex-direction: row;
             justify-content: space-evenly;
@@ -949,19 +948,17 @@
 
         /* pied de page */
 
-        footer{
+        .pied-de-page{
+            justify-content: flex-start;
             padding-top: 0;
             margin-top: 55px;
             padding-bottom: 45px;
         }
-        .pied-de-page{
-            justify-content: flex-start;
+        .pied-de-page section {
+            margin: 0px 0 0 3%;
+            width: 29.5%;
         }
-        .pied-de-page div{
-            margin: 0px 2.9%;
-            width: 26%;
-        }
-        .pied-de-page div h4{
+        .pied-de-page section h4{
             padding: 25px 0 10px 0;
         }
     }
