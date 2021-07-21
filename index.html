@@ -65,25 +65,25 @@
 
                 <!--filtres corp-->  
 
-                <!-- pour le nouveau filtre ma recherche de construction https://www.youtube.com/watch?v=r-X7DutXeIY -->       
+                <!-- pour le nouveau filtre ma recherche de construction https://www.youtube.com/watch?v=r-X7DutXeIY et https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/checkbox-->       
                     
                 <form method='post' action='filtre.php' class='ensemble-filtre flexible gras'>                   
                     <p><a href='#'>Filtres</a></p>                        
-                    <input type='hidden' name='economique' id='economique'>
+                    <input type='checkbox' name='interet' id='economique'>
                     <label for='economique' class='filtre-transformation flexible'><i class="fas fa-money-bill-wave relative bleu fe-bleu-c"></i><span>Économique</span></label>
-                    <input type='hidden' name='familial' id='familial'> 
+                    <input type='checkbox' name='interet' id='familial'> 
                     <label for='familial' class='filtre-transformation flexible'><i class="fas fa-child relative bleu fe-bleu-c"></i><span>Familial</span></label>   
-                    <input type='hidden' name='romantique' id='romantique'> 
+                    <input type='checkbox' name='interet' id='romantique'> 
                     <label for='romantique' class='filtre-transformation flexible'><i class="fas fa-heart relative bleu fe-bleu-c"></i><span>Romantique</span></label>                                         
-                    <input type='hidden' name='animaux' id='animaux'>  
+                    <input type='checkbox' name='interet' id='animaux'>  
                     <label for='animaux' class='filtre-transformation flexible'><i class="fas fa-dog bleu fe-bleu-c"></i><span>Animaux autorisés</span></label>                                
                 </form>
 
-                <!--logo + information-->    <!-- j'aurais pu faire un aside mais une figure est défendable -->
-                <figure class='info flexible'>
+                <!--logo + information-->   
+                <aside class='info flexible'>
                     <a href='#'><i class="fas fa-info bleu centrer"></i></a>
-                    <figcaption>Plus de 500 logements sont disponibles dans cette ville</figcaption>
-                </figure>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </aside>
             </section>
         </header>
 
