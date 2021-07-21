@@ -7,11 +7,11 @@
         box-sizing: border-box;
     }
 
-    /* !!!!!! Jigsaw validator n'aime pas les variable, chaque variable est une alerte !!!!!!!*/
+    /* !!!!!! Jigsaw validator n'aime pas les variables, chaque variable est une alerte !!!!!!!*/
     /*
     :root{   
         */
-        /* mélange de ciblage dans les couleurs, il faudrait 50 variables pour chaque role ce qui alourdirait le code */
+        /* mélange de ciblage dans les couleurs, il faudrait 50 variables pour chaque role */
         /*
         --couleur-o: transparent;
         --couleur-prem: #0065FC;  
@@ -442,15 +442,14 @@
         margin: 24px 0;
         height: 465px;
     }
-    .ensemble-carte-informative-populaire a{
-        width: 90%;
-        height: 145px;
-    }
     .carte-informative-populaire{
         align-items: center;
         background-color: white;
-        border-radius: 20px; 
+        width: 90%;
         height: 145px;
+        flex-flow: column wrap;
+        position: relative;
+        align-items: flex-start;
     }
     .carte-informative-populaire img{
         width: 100%;
@@ -459,27 +458,27 @@
         border-bottom-left-radius: 15px;
         object-fit: cover;
     }
-    .texte2{
-        width: 57%;
-        height: 105px;
-        margin-left: 4.5%;
+    .carte-informative-populaire p[class="lieu gras"]{
+        margin: 16px 0 0 10px;
+        width: 50%;
     }
-    .texte2 .etoile{
+    .carte-informative-populaire p[class="prix"]{
+        margin: 5px 0 0 10px;
+        width: 50%;
+    }
+    .carte-informative-populaire p[class="etoile"]{
+        position:absolute;
         bottom: 0;
-    }
-    .texte2 p{
-        margin: 0px 10px 2px 10px;
-    }
-    .texte2 p:last-child{
-        padding-bottom: 10px;
+        left: 45.5%;
     }
     
     /*carte spécifique populaire*/
 
     .soleil, .coeur, .blanc{
+        min-width: 109px;
         width: 38%;
-        height: 134px;
-        margin-left: 5px;
+        height: 135px;
+        margin: 5px 0 5px 5px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
