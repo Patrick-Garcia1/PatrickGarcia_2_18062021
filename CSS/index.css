@@ -6,23 +6,26 @@
     *{
         box-sizing: border-box;
     }
+
+    /* !!!!!! Jigsaw validator n'aime pas les variable, chaque variable est une alerte !!!!!!!*/
+    /*
     :root{   
-        
+        */
         /* mélange de ciblage dans les couleurs, il faudrait 50 variables pour chaque role ce qui alourdirait le code */
-        
+        /*
         --couleur-o: transparent;
         --couleur-prem: #0065FC;  
         --couleur-sec: #DEEBFF;
         --couleur-tert: #F2F2F2;
         --couleur-qua: black;  
-
+                                */
         /* bordure */
-
+        /*
         --petite-bord: 15px;
         --grande-bord: 20px;
-
+                                */
         /* font */
-
+        /*
         --raleway: 'Raleway', sans-serif;
         --gras: 700;
         --h1: 1.4em;
@@ -31,21 +34,21 @@
         --h4: 1.1em;
         --p: 1em;
         --pprix: 0.8em;
-    }
+    }                           */
     body{
-        font-family: var(--raleway);
+        font-family: 'Raleway', sans-serif;
         margin: 0 auto;
         padding: 0;
-        color: var(--couleur-qua);
+        color: black;
         font-weight: 500;
         height: 100vh;
     }
-    ::selection{
-        color: var(--couleur-prem);
-        background-color: var(--couleur-tert);
+    ::selection{ 
+        color: #0065FC;
+        background-color: #F2F2F2;
     }
     :link{
-        color: var(--couleur-qua);
+        color: black
     }
     .flexible{
         display: flex;
@@ -60,19 +63,19 @@
     /* couleur recommandées */
 
     .bleu{
-        color: var(--couleur-prem);
+        color: #0065FC;
     }
     .bleu-c{
-        color: var(--couleur-sec);
+        color: #DEEBFF;
     }
     .gris{
         color: rgb(199, 198, 198);
     }
     .fe-gris{
-        background-color: var(--couleur-tert);
+        background-color: #F2F2F2;
     }
     .fe-bleu-c{
-        background-color: var(--couleur-sec);
+        background-color: #DEEBFF;
     }
 
     /* texte */
@@ -81,13 +84,19 @@
         text-decoration: none; 
     }
     :visited{
-        color: var(--couleur-qua);
+        color: black;
     }
     .centrer{
         text-align: center;
     }
     .gras{
-        font-weight: var(--gras);
+        font-weight: 700;
+    }
+
+    /* alerte w3c */
+
+    h5{
+        display: none;
     }
 
     /* logo menu */
@@ -128,7 +137,7 @@
     }
     .un, .deux{
         padding: 37px 0 15px 0;
-        border-bottom: 2px solid var(--couleur-tert);
+        border-bottom: 2px solid #F2F2F2;
     }
     .trois{
         align-self: flex-start;
@@ -140,17 +149,17 @@
     /* interaction menu */
 
     .trois a:link{
-        color: var(--couleur-prem);
+        color: #0065FC;
     }
     .trois a:visited{
-        color: var(--couleur-prem);
+        color: #0065FC;
     }
     .un:hover, .deux:hover{
-        border-bottom: 2px solid var(--couleur-prem);
+        border-bottom: 2px solid #0065FC;
         cursor: pointer;
     }
     .un:hover a, .deux:hover a{
-        color: var(--couleur-prem);
+        color: #0065FC;
     } 
 
     /* tête de page */
@@ -164,7 +173,7 @@
 
     h1[class='gras']{
         margin: 30px 0 0 0;
-        font-size:var(--h1);
+        font-size:1.4em;
     }
     .p-un{
         margin: 10px 0 18px 0;
@@ -177,8 +186,8 @@
         width: 100%;
         height: 50px;
         align-items: center;
-        border: 1px solid var(--couleur-tert);
-        border-radius:var(--petite-bord);
+        border: 1px solid #F2F2F2;
+        border-radius:15px;
     }
     form[class='recherche flexible']{
         margin: 35px auto;
@@ -187,8 +196,8 @@
 
     .localisation{
         padding: 17px 19px 17px 19px;
-        border-top-left-radius: var(--petite-bord);
-        border-bottom-left-radius: var(--petite-bord);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
         font-size: 1.1em;
     }
 
@@ -199,9 +208,9 @@
         width: 100%;
         margin: 0 10px;  
         font-size: 1em;
-        font-weight: var(--gras);
+        font-weight: 700;
         border: none;
-        font-family: var(--raleway);
+        font-family: 'Raleway', sans-serif;
     }
     .texte{
         display: none;
@@ -210,11 +219,11 @@
     /*zone du bouton*/
 
     form[action="traitement.php"] button{
-        background-color: var(--couleur-prem);
+        background-color: #0065FC;
         color: white;
         height: 50px;
         border: none;
-        border-radius: var(--petite-bord);
+        border-radius: 15px;
         font-size: 1.2em;
         padding: 0 15px;
         cursor: pointer;      /* censé être sur:hover mais en simulation tactile, si je ne le rajoute pas là il ne se passe rien car réactif à <a> */
@@ -226,9 +235,9 @@
     /* interaction moteur de recherche */
 
     form[action="traitement.php"] button:hover{
-        background-color: var(--couleur-sec);
-        color: var(--couleur-prem);
-        border-color: var(--couleur-tert);
+        background-color: #DEEBFF;
+        color: #0065FC;
+        border-color: #F2F2F2;
         border-left: none;
         cursor: pointer;
     }
@@ -286,23 +295,19 @@
     /* interaction filtre */
 
     .ensemble-filtre p a:hover{
-        color: var(--couleur-prem); 
+        color: #0065FC;
     }
     .filtre-transformation:hover{
-        color: var(--couleur-prem);
-        background-color: var(--couleur-sec); 
-        border-color: var(--couleur-o);
-        box-shadow: 1px 1px 4px 1px var(--couleur-qua);
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-color: transparent;
+        box-shadow: 1px 1px 4px 1px black;
         cursor: pointer;
-        -webkit-transition: 0.5s box-shadow;
-        -ms-transition: 0.5s box-shadow;
-        -moz-transition: 0.5s box-shadow;
-        -o-transition: 0.5s box-shadow;
         transition: 0.5s box-shadow;
     }
     .filtre-transformation:hover i{
-        background-color: var(--couleur-prem);
-        color: var(--couleur-sec);
+        background-color: #0065FC;
+        color: #DEEBFF;
     }
 
     /* information corp */
@@ -331,18 +336,18 @@
     /* interaction information */
 
     .info a:hover i{
-        color: var(--couleur-sec);
-        background-color: var(--couleur-prem);
+        color: #DEEBFF;
+        background-color: #0065FC;
     }
 
     /* section hero */
 
-    /* main, premiere section, hebergement et populaire */
+    /* main, main section, hebergement et populaire */
 
     main{
         margin: 15px 0 10px 0;
     }
-    .premiere-section{
+    .main-section{
         flex-direction: column-reverse; 
     }
    
@@ -352,13 +357,13 @@
 
     .ensemble-carte-informative-article a, .ensemble-carte-informative-populaire a{
         box-shadow: 1px 3px 8px 1px #e2e2e2;
-        border-radius: var(--grande-bord); 
+        border-radius: 20px; 
     }
 
     /* hebergement */
 
     article h2{
-        font-size: var(--h2); 
+        font-size: 1.4em; 
         padding-top: 18px;
         margin-left: 5%;
         margin-bottom: 10px;
@@ -378,14 +383,14 @@
         width: 100%;
         height: 110px;
         object-fit: cover;
-        border-top-left-radius: var(--petite-bord);
-        border-top-right-radius: var(--petite-bord);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
     .carte-informative-article .lieu, .carte-informative-article .prix, .carte-informative-article .etoile{
         margin: 2px 20px 2px 7%;
     }
     .prix{
-        font-size: var(--pprix);
+        font-size: 0.8em;
         line-height: 1.8em;
     }
     .plus{
@@ -397,7 +402,7 @@
     /* éléments texte des cartes article et populaire */
 
     .carte-informative-article p[class='lieu gras'], .carte-informative-populaire p[class='lieu gras']{
-        font-size: var(--p);
+        font-size: 1em;
     }
     .carte-informative-article p i, .carte-informative-populaire p i{
         font-size: 0.7em;  
@@ -410,8 +415,8 @@
 
     .cannebiere, .port, .mouettes, .mer, .panier, .amina{
         height: 115px;
-        border-top-left-radius: var(--petite-bord);
-        border-top-right-radius: var(--petite-bord);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         margin: 0 5px;
     }
     
@@ -419,7 +424,7 @@
 
     .populaire h2{
         margin: 0 5%;
-        font-size: var(--h2); 
+        font-size: 1.4em; 
         padding-top: 38px;
     }
     .populaire h2 i{
@@ -439,14 +444,14 @@
     .carte-informative-populaire{
         align-items: center;
         background-color: white;
-        border-radius: var(--grande-bord); 
+        border-radius: 20px; 
         height: 145px;
     }
     .carte-informative-populaire img{
         width: 100%;
         height: 134px;
-        border-top-left-radius: var(--petite-bord);
-        border-bottom-left-radius: var(--petite-bord);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
         object-fit: cover;
     }
     .texte2{
@@ -470,68 +475,32 @@
         width: 38%;
         height: 134px;
         margin-left: 5px;
-        border-top-left-radius: var(--petite-bord);
-        border-bottom-left-radius: var(--petite-bord);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     /* interaction populaire */
 
     .populaire h2 i:hover{
-        color: var(--couleur-prem);
+        color: #0065FC;
         cursor: pointer;
     }
 
     /* interaction cartes article et populaire */
 
     .ensemble-carte-informative-article a:hover, .ensemble-carte-informative-populaire a:hover{
-        box-shadow: 2px 3px 8px 2px var(--couleur-qua);
-        -webkit-transition: 0.5s box-shadow;
-        -ms-transition: 0.5s box-shadow;
-        -moz-transition: 0.5s box-shadow;
-        -o-transition: 0.5s box-shadow;
+        box-shadow: 2px 3px 8px 2px black;
         transition: 0.5s box-shadow;
     }
     .carte-informative-article:hover p i[class='fas fa-star bleu'], .carte-informative-populaire:hover p i[class='fas fa-star bleu']{
-        -webkit-animation: 1s opacité infinite;
-        -ms-animation: 1s opacité infinite;
-        -moz-animation: 1s opacité infinite;
-        -o-animation: 1s opacité infinite;
         animation: 1s opacité infinite;
     }
     .carte-informative-article:hover p i[class='fas fa-star gris'], .carte-informative-populaire:hover p i[class='fas fa-star gris']{
-    -webkit-animation: 0.3s bouge;
-    -ms-animation: 0.3s bouge;
-    -moz-animation: 0.3s bouge;
-    -o-animation: 0.3s bouge;
     animation: 0.3s bouge;
     }
 
     /* animation opacité */
 
-    @-webkit-keyframes  opacité{
-        00%{opacity: 1;}
-        40%{opacity: 1;}
-        70%{opacity: 0.7;}
-        100%{opacity: 0.4;}
-    }
-    @-ms-keyframes  opacité{
-        00%{opacity: 1;}
-        40%{opacity: 1;}
-        70%{opacity: 0.7;}
-        100%{opacity: 0.4;}
-    }
-    @-moz-keyframes  opacité{
-        00%{opacity: 1;}
-        40%{opacity: 1;}
-        70%{opacity: 0.7;}
-        100%{opacity: 0.4;}
-    }
-    @-o-keyframes  opacité{
-        00%{opacity: 1;}
-        40%{opacity: 1;}
-        70%{opacity: 0.7;}
-        100%{opacity: 0.4;}
-    }
     @keyframes  opacité{
         00%{opacity: 1;}
         40%{opacity: 1;}
@@ -541,30 +510,6 @@
 
     /* animation bouge */
 
-    @-webkit-keyframes  bouge{
-        25%{transform: translateY(-1px);}
-        50%{transform: translateY(1px);}
-        75%{transform: translateY(-1px);}
-        100%{transform: translateY(1px);}
-    }
-    @-ms-keyframes  bouge{
-        25%{transform: translateY(-1px);}
-        50%{transform: translateY(1px);}
-        75%{transform: translateY(-1px);}
-        100%{transform: translateY(1px);}
-    }
-    @-moz-keyframes  bouge{
-        25%{transform: translateY(-1px);}
-        50%{transform: translateY(1px);}
-        75%{transform: translateY(-1px);}
-        100%{transform: translateY(1px);}
-    }
-    @-o-keyframes  bouge{
-        25%{transform: translateY(-1px);}
-        50%{transform: translateY(1px);}
-        75%{transform: translateY(-1px);}
-        100%{transform: translateY(1px);}
-    }
     @keyframes  bouge{
         25%{transform: translateY(-1px);}
         50%{transform: translateY(1px);}
@@ -575,7 +520,7 @@
     /* interaction du main */
 
     .plus a:hover{
-        color: var(--couleur-prem);
+        color: #0065FC;
     }
 
     /* Activités à Marseille */
@@ -586,7 +531,7 @@
     .activité h3{
         margin: 10px 0 10px 5%;
         padding-top: 12px;
-        font-size: var(--h3);
+        font-size: 1.3em;
     }
     .carte-activité{
         flex-flow: column wrap;
@@ -598,21 +543,21 @@
         width: 100%;
         height: 133px;
         object-fit: cover;
-        border-top-left-radius: var(--grande-bord);
-        border-top-right-radius: var(--grande-bord);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .carte-activité a{
-        border-radius: var(--grande-bord);
+        border-radius: 20px;
         box-shadow: 1px 3px 8px 1px #e2e2e2;
         width: 90%;
     }
     .carte-informative3, .carte-informative4, .carte-informative5, .carte-informative6, .carte-informative7{
         height: 190px;
-        border-radius: var(--grande-bord); 
+        border-radius: 20px; 
     }
     .carte-informative3 p[class='lieu gras'], .carte-informative4 p[class='lieu gras'], .carte-informative5 p[class='lieu gras'], .carte-informative6 p[class='lieu gras'], .carte-informative7 p[class='lieu gras']{
         margin-left: 3%;
-        font-size: var(--p);
+        font-size: 1em;
         margin-top: 20px;
     }
 
@@ -620,19 +565,15 @@
 
     .vieuxport, .pnc, .pomegues, .frioul, .nddlg, .longchamp{
         height: 133px;
-        border-top-left-radius: var(--grande-bord);
-        border-top-right-radius: var(--grande-bord);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         margin: 0;
     }
 
     /* interaction activité */
 
     .carte-activité a:hover{
-        box-shadow: 2px 3px 8px 2px var(--couleur-qua);
-        -webkit-transition: 0.5s box-shadow;
-        -ms-transition: 0.5s box-shadow;
-        -moz-transition: 0.5s box-shadow;
-        -o-transition: 0.5s box-shadow;
+        box-shadow: 2px 3px 8px 2px black;
         transition: 0.5s box-shadow;
     }
 
@@ -651,13 +592,13 @@
     }
     .pied-de-page section H4{
         padding: 15px 0 10px 0;
-        font-size: var(--h4);
+        font-size: 1.1em;
     }
     
     /* interaction pied de page */
 
     .pied-de-page section a:hover{
-        color: var(--couleur-prem);
+        color: #0065FC;
     }
 
     /* media 820px à 1349px */
@@ -688,10 +629,10 @@
 
     @media screen and (min-width: 1024px){
 
-        :root{
+      /*  :root{
             --p: 0.79em;
             --pprix: 0.69em;
-        }
+        }   */
 
         /* body */
 
@@ -731,7 +672,7 @@
             order: unset;
             padding: 50px 0 0 0;
             border-bottom: none;
-            border-top: 2px solid var(--couleur-o);
+            border-top: 2px solid transparent;
         }
         .trois{
             text-align: center;
@@ -741,7 +682,7 @@
 
         .un:hover, .deux:hover{
             border-bottom: none;
-            border-top: 2px solid var(--couleur-prem);
+            border-top: 2px solid #0065FC;
         }
 
         /* section corp */
@@ -796,16 +737,19 @@
 
         /* section hero */
 
-        .premiere-section{
+        .main-section{
             flex-direction: row;
             justify-content: space-evenly;
         }
+        .carte-informative-populaire p[class='lieu gras'], .carte-informative-article p[class='lieu gras'], .carte-activité p[class='lieu gras']{
+            font-size: 0.79em;
+        } 
 
         /* article */
 
         article{
-            background-color: var(--couleur-tert);
-            border-radius: var(--grande-bord);
+            background-color: #F2F2F2;
+            border-radius: 20px;
             max-width: 61%;
             padding: 0 1%;
             min-height: 100%;
@@ -822,6 +766,12 @@
             background-color: white;
             width: 29%;
         }
+        p[class='lieu gras']{
+            font-size: 0.8em;
+        }
+        .prix{
+            font-size: 0.69em;
+        }
         .plus {
             margin-left: 2%;     
             padding: 25px 0 20px 10px;
@@ -831,7 +781,7 @@
 
         .populaire{
             max-width: 29%;
-            border-radius: var(--grande-bord);
+            border-radius: 20px;
             padding: 0;
             min-height: 100%;
             margin-top: 0;
@@ -878,30 +828,30 @@
             width: 22.5%;
         }
         .carte-informative3 p, .carte-informative4 p, .carte-informative5 p, .carte-informative6 p, .carte-informative7 p{
-            font-size: var(--p);
+            font-size: 0.79em;
         }
         
         /* carte informative activité */
         
         .carte-informative3{
             Height: 444px;
-            border-radius: var(--grande-bord); 
+            border-radius: 20px; 
         }
         .carte-informative4{
             height: 235px;
-            border-radius: var(--grande-bord); 
+            border-radius: 20px; 
         }
         .carte-informative5{
             height: 165px;
-            border-radius: var(--grande-bord); 
+            border-radius: 20px; 
         }
         .carte-informative6{
             height: 195px;
-            border-radius: var(--grande-bord); 
+            border-radius: 20px; 
         }
         .carte-informative7{
             height: 210px;
-            border-radius: var(--grande-bord); 
+            border-radius: 20px; 
         }
         
         /*carte spécifique activité*/
@@ -945,8 +895,14 @@
     /* ajustement variable > 1250px */
 
     @media screen and (min-width: 1260px){
-        :root{
+       /* :root{
             --p: 1em;
-            --pprix: 0.8em;
+            --pprix: 0.8em; 
+        }*/
+        .carte-informative-populaire p[class='lieu gras'], .carte-informative-article p[class='lieu gras'], .carte-activité p[class='lieu gras']{
+            font-size: 1em;
         }
-    }
+        .prix{
+            font-size: 0.8em;
+        }
+    } 
