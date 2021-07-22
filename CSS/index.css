@@ -43,8 +43,8 @@
         font-weight: 500;
     }
     ::selection{ 
-        color: #0065FC;
-        background-color: #F2F2F2;
+        color: unset;
+        background-color: #DEEBFF;
     }
     :link{
         color: black
@@ -309,6 +309,10 @@
         box-shadow: 1px 1px 4px 1px black;
         cursor: pointer;
         transition: 0.5s box-shadow;
+    }
+    form span::selection{ 
+        color: unset;
+        background-color: unset;
     }
     .filtre-transformation:hover i{
         background-color: #0065FC;
